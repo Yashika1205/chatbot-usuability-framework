@@ -160,10 +160,11 @@ chatbot_usability_framework/
 │
 ├── 📂 metrics/
 │   ├── metric_engine.py        ← All 5 metric modules
+│   ├── metrics_v2.py           ← Full scorer (pipeline_v3 + Colab compatible)
 │   ├── mattr_calculator.py     ← MATTR-50 (Covington & McFall 2010)
 │   ├── prometheus_judge.py     ← Prometheus 2 LLM-as-judge integration
-│   ├── kappa_calculator.py     ← Cohen's Kappa (Landis & Koch 1977)
-│   └── prometheus_v2.py        ← Prometheus v2 scoring engine
+│   ├── prometheus_v2.py        ← Prometheus v2 scoring engine
+│   └── kappa_calculator.py     ← Cohen's Kappa (Landis & Koch 1977)
 │
 ├── 📂 workbook/
 │   ├── cr_script.csv           ← Context Retention script
