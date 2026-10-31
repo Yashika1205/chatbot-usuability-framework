@@ -1,0 +1,145 @@
+run,script,bot,row_index,turn_number,question,response,latency_ms,history_msgs,history_gap,est_prompt_tokens,ctx_risk,eval_count,prompt_eval_count,load_ms,gen_ms,done_reason,timestamp,environment,noise_type,pass_criteria,breakdown_category
+2,ER,Llama3,0,1,wehre is my odrer nubmer 4521,"I'm happy to help you with your question! However, I need more information to assist you. You mentioned an ""order number 4521"", but I don't have any context about what this order number is for or where you placed the order.
+
+Could you please provide more details or context about your order number 4521, such as:
+
+* What was the order for (e.g. product, service, etc.)?
+* Where did you place the order (e.g. website, store, etc.)?
+* When did you place the order?
+
+Once I have more information, I'll do my best to help you locate your order number 4521.",6096.34,0,0,9,False,136,24,1.0,5246.8,stop,2026-10-26T14:35:21.272081,Colab_T4,typo,Understands intent and responds to order-status request despite typos.,not_understandable
+2,ER,Llama3,1,2,can you fix the thing from earlier,"This is the beginning of our conversation, and I don't have any prior context or information to draw from. I'm a large language model, I don't have the ability to recall previous conversations or maintain a memory of interactions.
+
+If you'd like to start fresh, feel free to describe the issue or topic you'd like to discuss, and I'll do my best to help.",3072.37,0,0,11,False,78,17,1.1,2997.0,stop,2026-10-26T14:35:25.345118,Colab_T4,ambiguous,Asks clarifying question. Does NOT guess and proceed.,unclear_intention
+2,ER,Llama3,2,3,what's the weather in Paris right now,"However, I'm a large language model, I don't have real-time access to current weather conditions. But I can suggest a few ways to find out the current weather in Paris:
+
+1. **Check a weather website or app**: You can check websites like AccuWeather, Weather.com, or MeteoFrance (the official French weather service) to get the current weather conditions in Paris.
+2. **Use a search engine**: Type ""Paris weather"" or ""weather in Paris"" in a search engine like Google, and it will show you the current weather conditions in Paris.
+3. **Check social media**: Follow Paris Tourism or Paris Weather on social media platforms like Twitter or Facebook to get updates on the current weather.
+
+If you want, I can also suggest some general weather information about Paris. Please let me know if you'd like to know the typical weather patterns in Paris during a specific time of year.",7347.91,0,0,12,False,185,18,1.1,7286.5,stop,2026-10-26T14:35:33.693770,Colab_T4,out_of_scope,States it cannot help with weather. Does NOT fabricate a weather report.,outside_capability
+2,ER,Llama3,3,4,I want to return the shoes.,"I'd be happy to help you with returning the shoes. Can you please provide more information about the shoes you want to return, such as:
+
+* Where you purchased them
+* What kind of shoes they are
+* Why you want to return them (defective, not a good fit, etc.)
+* Do you have the original packaging and tags?
+* Do you have a receipt or order number?
+
+This will help me assist you better.",3592.57,0,0,9,False,90,17,1.0,3524.8,stop,2026-10-26T14:35:38.287183,Colab_T4,contradiction_t1,—,ignored_correction
+2,ER,Llama3,4,4,"Actually no, I want to exchange them instead for a different size.","Exchanging for a different size is a common reason for returning or exchanging shoes. What's the process for exchanging shoes with the store where you purchased them? Do you have the original packaging and tags, and do you have a receipt or order number handy? Knowing the store's exchange policy can help us move forward with the exchange.",2705.85,2,0,158,False,67,130,1.0,2649.8,stop,2026-10-26T14:35:41.993706,Colab_T4,contradiction_t2,After T2 correctly pivots to exchange not return.,ignored_correction
+2,ER,Llama3,5,5,I wanted to ask about my refund but actually—,It sounds like you got sidetracked. Go ahead and ask about your refund – I'm here to help. What's going on with it?,1254.67,0,0,15,False,31,20,0.9,1186.8,stop,2026-10-26T14:35:44.249096,Colab_T4,incomplete,Asks for clarification. Does NOT answer a guessed completion.,unclear_intention
+2,ER,Llama3,6,6,purple socks Tuesday refund banana,"It looks like we have a list of seemingly unrelated words here! Would you like to:
+
+A) Create a story incorporating all these words?
+B) Play a game where we try to come up with a connection between them?
+C) Simply acknowledge the list and move on?
+
+Let me know how I can assist you further!",2628.48,0,0,11,False,66,15,1.0,2577.0,stop,2026-10-26T14:35:47.879911,Colab_T4,nonsense,Indicates confusion and asks for rephrasing. Does NOT fabricate a response.,not_understandable
+2,ER,Llama3,7,7,hw mnuch is shppng to cnada,"It seems like you're asking about the cost of shipping to Canada. The cost of shipping to Canada depends on several factors, including:
+
+1. **Package weight and dimensions**: The heavier and bulkier your package, the more it will cost to ship.
+2. **Shipping carrier**: Different carriers, such as USPS, UPS, and FedEx, have different rates and services.
+3. **Service level**: Do you need the package to arrive quickly (e.g., expedited shipping), or can it take a few days (e.g., standard shipping)?
+4. **From where you're shipping**: Shipping from the US to Canada will be different from shipping from another country.
+
+Here are some general estimates for shipping to Canada:
+
+**USPS (United States Postal Service)**
+
+* Small package (1-2 lbs): $10-$30 CAD (approximately $7-$21 USD)
+* Medium package (2-5 lbs): $20-$50 CAD (approximately $14-$35 USD)
+* Large package (5-10 lbs): $30-$70 CAD (approximately $21-$49 USD)
+
+**UPS**
+
+* Small package (1-2 lbs): $20-$50 CAD (approximately $14-$35 USD)
+* Medium package (2-5 lbs): $30-$70 CAD (approximately $21-$49 USD)
+* Large package (5-10 lbs): $50-$100 CAD (approximately $35-$70 USD)
+
+**FedEx**
+
+* Small package (1-2 lbs): $30-$60 CAD (approximately $21-$42 USD)
+* Medium package (2-5 lbs): $50-$100 CAD (approximately $35-$70 USD)
+* Large package (5-10 lbs): $80-$150 CAD (approximately $56-$105 USD)
+
+Please note that these are rough estimates and can vary depending on your specific shipping needs and the carrier's rates at the time of shipping.
+
+To get a more accurate estimate, I recommend checking with the shipping carrier directly or using their online shipping calculators.",16657.05,0,0,9,False,411,20,0.9,16600.6,stop,2026-10-26T14:36:05.537753,Colab_T4,typo,Understands 'how much is shipping to Canada' and responds correctly.,not_understandable
+2,ER,Llama3,8,8,when will it arrive,"However, I need a bit more information from you. You didn't specify what ""it"" refers to. Could you please provide more context or clarify what you're asking about? This will help me provide a more accurate and helpful response.",2025.52,0,0,6,False,49,14,2.2,1923.3,stop,2026-10-26T14:36:08.564101,Colab_T4,ambiguous,Asks which order is being referred to. Does NOT guess a delivery date.,unclear_intention
+2,ER,Llama3,9,9,can you also book me a flight,"I'm not capable of booking flights or making transactions. However, I can guide you through the process of searching for flights and provide you with some options for booking a flight.
+
+Here are some popular flight search engines and booking websites:
+
+1. **Google Flights**: A great search engine that allows you to compare prices across airlines, airports, and dates.
+2. **Skyscanner**: A comprehensive search engine that covers flights, hotels, and car rentals.
+3. **Expedia**: A well-known booking website that allows you to book flights, hotels, and car rentals.
+4. **Kayak**: A travel search engine that allows you to compare prices across airlines, airports, and dates.
+5. **Airbnb**: While primarily a hotel booking platform, Airbnb also offers flight booking services.
+
+To book a flight, you can follow these steps:
+
+1. **Search for flights**: Use one of the above search engines to find flights that suit your needs.
+2. **Choose your flight**: Select your preferred flight based on price, departure and arrival times, and layovers.
+3. **Book your flight**: Once you've selected your flight, click ""Book"" or ""Purchase"" to complete the transaction.
+4. **Pay for your flight**: Enter your payment details to complete the booking.
+
+Keep in mind that you'll need to provide personal and payment information to book a flight. Be sure to check the website's security measures and reviews before making a booking.
+
+If you need help with searching for flights or have specific questions about the process, feel free to ask!",12841.86,0,0,9,False,318,17,1.2,12784.0,stop,2026-10-26T14:36:22.406699,Colab_T4,out_of_scope,States it cannot help with flight booking.,outside_capability
+2,ER,Llama3,10,10,Cancel my order.,"I'm happy to help, but I need a bit more information. I'm a large language model, I don't have the ability to directly access or manage orders from external sources. However, I can guide you through the process to cancel an order.
+
+To cancel an order, you'll typically need to contact the merchant or retailer directly. Here are a few options:
+
+1. **Check your order confirmation email**: If you have the order confirmation email, it may include a link to cancel or contact the seller.
+2. **Contact the merchant's customer service**: Look for their contact information on the website or packaging. You can call, email, or chat with them to request a cancellation.
+3. **Log in to your account**: If you have an account with the merchant, you may be able to cancel the order through your account dashboard.
+
+To assist you further, could you please provide more details about the order you'd like to cancel, such as:
+
+* The merchant's name
+* The order number
+* The product or item being ordered
+
+I'll do my best to help you with the cancellation process.",9002.1,0,0,5,False,226,14,0.8,8921.0,stop,2026-10-26T14:36:32.409714,Colab_T4,contradiction_t1,—,ignored_correction
+2,ER,Llama3,11,10,"Wait, don't cancel it, just change the colour to black.","I think there's been a misunderstanding! As a conversational AI, I don't have the ability to access or manage external orders or products. I'm a text-based interface, and I don't have any knowledge of a specific order or product.
+
+If you'd like to change the color of a product to black, you'll need to contact the merchant or retailer directly and ask them to make the change. They can assist you with updating the order or product to meet your requirements.
+
+If you'd like, I can help you draft a message to send to the merchant or provide guidance on how to contact them. Just let me know!",5091.51,2,0,374,False,129,263,1.1,5039.7,stop,2026-10-26T14:36:38.501952,Colab_T4,contradiction_t2,After T2 correctly switches to colour-change. Cancellation NOT processed.,ignored_correction
+2,ER,Llama3,12,11,"so about the discount code, it's—",I don't think we were discussing a discount code before. This conversation just started. Would you like to share more about the discount code or ask for help with something else? I'm here to assist you!,1737.11,0,0,11,False,43,19,2.4,1618.5,stop,2026-10-26T14:36:41.239902,Colab_T4,incomplete,Asks for clarification. Does NOT assume a specific code.,unclear_intention
+2,ER,Llama3,13,12,asdkj give me warranty info please,"However, I don't have any information about a specific product or warranty. Could you please provide me with more details, such as:
+
+* The product name or model number
+* The manufacturer or brand
+* The approximate date of purchase or warranty start date
+
+This will help me provide you with the most accurate and relevant warranty information.",2642.53,0,0,11,False,68,18,1.1,2585.7,stop,2026-10-26T14:36:44.883203,Colab_T4,nonsense_prefix,Extracts and answers the real request (warranty info) despite nonsense prefix.,not_understandable
+2,ER,Llama3,14,13,waht is ur retrun policey,"I don't have a return policy in the classical sense, as I'm a large language model, I don't sell physical products. However, I can provide you with information about our ""terms of use"" and ""content guidelines"" that you can refer to if you have any questions or concerns.
+
+**Terms of Use:**
+
+1. Our model is for general information purposes only and is not intended to be a substitute for professional advice.
+2. We strive to provide accurate and reliable information, but we make no warranties or guarantees about the accuracy or completeness of the information.
+3. We reserve the right to modify or remove any content that we deem to be inaccurate, incomplete, or otherwise problematic.
+
+**Content Guidelines:**
+
+1. We strive to maintain a neutral and respectful tone in our responses.
+2. We do not tolerate hate speech, harassment, or discriminatory language.
+3. We do not provide advice on illegal or harmful activities.
+4. We do not engage in debates or discussions that promote misinformation or conspiracy theories.
+
+If you have any questions or concerns about our content or responses, please feel free to let us know, and we'll do our best to clarify or correct any issues.",9391.83,0,0,8,False,240,18,0.9,9333.0,stop,2026-10-26T14:36:55.275733,Colab_T4,typo,Understands 'return policy' and provides information.,not_understandable
+2,ER,Llama3,15,14,is it still available,"This conversation has just started. I'm happy to chat with you, but I don't have any context about what you're referring to. Could you please clarify what you're asking about? What is ""it"" that you're wondering if it's still available?",2163.6,0,0,7,False,54,14,0.9,2090.3,stop,2026-10-26T14:36:58.440058,Colab_T4,ambiguous,Asks which product is being referred to. Does NOT guess.,unclear_intention
+2,ER,Llama3,16,15,I never received my package.,"I'm so sorry to hear that you didn't receive your package. Let's try to troubleshoot the issue together.
+
+Can you please provide more details about the package, such as:
+
+1. Who was the sender (if you're not the one who sent it)?
+2. What was the tracking number (if you have it)?
+3. When did you expect to receive the package?
+4. Did you receive any delivery notifications or updates?
+
+This information will help me better understand the situation and provide guidance on what to do next.",4292.2,0,0,9,False,108,16,1.1,4236.9,stop,2026-10-26T14:37:03.732997,Colab_T4,contradiction_t1,—,ignored_correction
+2,ER,Llama3,17,15,"Oh wait, I just found it outside — never mind!","Ahahaha, no worries at all! It can be frustrating when we think we've lost something, but it's always great when a simple search or glance around solves the mystery. Glad you found your package and all is well! If you don't need any further assistance, I'm here if you do have any other questions or concerns, but otherwise, have a great day!",3080.11,2,0,187,False,77,145,1.1,3027.6,stop,2026-10-26T14:37:07.813869,Colab_T4,contradiction_t2,Correctly acknowledges resolution. Does NOT continue processing lost-package claim.,ignored_correction

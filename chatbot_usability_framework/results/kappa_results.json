@@ -1,0 +1,22 @@
+{
+  "kappa": 0.0,
+  "interpretation": "Slight",
+  "target_met": false,
+  "agreement_count": 2,
+  "total_items": 3,
+  "observed_agreement": 0.6667,
+  "expected_agreement": 0.6667,
+  "confusion_matrix": {
+    "true_positive": 2,
+    "true_negative": 0,
+    "false_positive_a_says_no_b_says_yes": 0,
+    "false_negative_a_says_yes_b_says_no": 1
+  },
+  "turns_used": [
+    2,
+    7,
+    10
+  ],
+  "missing_turns": [],
+  "action": "Kappa=0.0 < 0.61 \u2014 Prometheus 2 judge NOT validated. Replace Prometheus scoring with full human scoring on all 5 judge turns."
+}

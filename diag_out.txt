@@ -1,0 +1,166 @@
+
+============================================================
+  CHATBOT USABILITY FRAMEWORK - DIAGNOSTICS
+============================================================
+
+-- 1. IMPORTS --
+  [PASS] RasaAdapter import
+  [PASS] OllamaAdapter import
+  [PASS] Orchestrator import
+  [PASS] Logger import
+  [PASS] Task bank import
+  [PASS] Metric engine import
+  [PASS] MATTR calculator import
+  [PASS] Prometheus judge import
+  [PASS] Kappa calculator import
+  [PASS] Scoring import
+  [PASS] SUS study import
+  [PASS] Analysis import
+  [PASS] Report import
+
+-- 2. ADAPTERS --
+  [PASS] Rasa mock send  => response len=43
+  [PASS] Rasa mock latency  => 150.0ms
+  [PASS] Rasa health_check mock
+  [PASS] Ollama mock send  => response len=66
+  [PASS] Ollama multi-turn history  => 4 messages in history
+  [PASS] Ollama reset  => history cleared
+
+-- 3. LOGGER --
+  [PASS] Logger save  => rasa_diag_test_6171b231.jsonl
+  [PASS] Logger load  => 2 turns loaded
+  [PASS] Logger latency preserved
+  [PASS] Logger metadata preserved
+  [PASS] Logger turn_number preserved
+
+-- 4. TASK BANK --
+  [PASS] 5 scripts exist  => ['context_retention', 'response_time', 'helpful_response', 'lexical_diversity', 'error_rate']
+  [PASS] context_retention turn count  => 30/30
+  [PASS] response_time turn count  => 15/15
+  [PASS] helpful_response turn count  => 15/15
+  [PASS] lexical_diversity turn count  => 12/12
+  [PASS] error_rate turn count  => 15/15
+  [PASS] All turns have required fields
+  [PASS] context_retention sequential turns  => first=1, last=30
+  [PASS] response_time sequential turns  => first=1, last=15
+  [PASS] helpful_response sequential turns  => first=1, last=15
+  [PASS] lexical_diversity sequential turns  => first=1, last=12
+  [PASS] error_rate sequential turns  => first=1, last=15
+
+-- 5. ORCHESTRATOR --
+  [PASS] Pilot: 5 turns
+  [PASS] Pilot: has bot_response
+  [PASS] Pilot: has latency_ms
+  [PASS] context_retention: 30 turns  => 30 turns
+  [PASS] response_time: 15 turns
+  [PASS] helpful_response: 15 turns
+  [PASS] lexical_diversity: 12 turns
+  [PASS] error_rate: 15 turns
+
+-- 6. METRIC ENGINE --
+  [PASS] Context Retention: runs
+  [PASS] Context Retention: checkpoints found  => found 6/6 checkpoints
+  [PASS] Context Retention: normalized 0-100  => 0.0
+  [PASS] Context Retention: valid classification  => Poor
+  [PASS] Context Retention: mock correctly scores 0%  => mock bot gives no vegetarian keyword -> 0% is correct
+  [PASS] Response Time: runs
+  [PASS] Response Time: avg > 0  => 150.0ms
+  [PASS] Response Time: mock is Good (150ms < 1000ms)  => Good
+  [PASS] Response Time: normalized > 90  => 98.5
+  [PASS] Response Time: valid_turns == 15
+  [Prometheus] Turn 2: score=4/5 (helpful) � [MOCK] Response length=82.
+  [Prometheus] Turn 3: score=4/5 (helpful) � [MOCK] Response length=82.
+  [Prometheus] Turn 7: score=4/5 (helpful) � [MOCK] Response length=77.
+  [Prometheus] Turn 10: score=4/5 (helpful) � [MOCK] Response length=75.
+  [Prometheus] Turn 12: score=4/5 (helpful) � [MOCK] Response length=76.
+  [PASS] Prometheus judge: returns scores dict
+  [PASS] Prometheus judge: 5 turns scored  => {2: True, 3: True, 7: True, 10: True, 12: True}
+  [PASS] Prometheus judge: turns are {2,3,7,10,12}
+  [PASS] Helpful Response: runs
+  [PASS] Helpful Response: total_turns == 15
+  [PASS] Helpful Response: normalized 0-100  => 80.0
+  [PASS] Helpful Response: has per_turn list
+  [PASS] Lexical Diversity: runs
+  [PASS] Lexical Diversity: excluded_turns is int
+  [PASS] Lexical Diversity: normalized 0-100  => 0.0
+  [PASS] Lexical Diversity: mock short responses excluded correctly  => excluded=12, scored=0
+  [PASS] Error Rate: runs
+  [PASS] Error Rate: total_turns == 15
+  [PASS] Error Rate: normalized 0-100  => 53.33
+  [PASS] Error Rate: has taxonomy_summary
+  [PASS] Error Rate: breakdown_count is int
+
+-- 7. MATTR CALCULATOR --
+  [PASS] MATTR: long text -> scored  => mattr=0.9167, tokens=48
+  [PASS] MATTR: score in [0,1]  => 0.9167
+  [PASS] MATTR: short text -> excluded  => tokens=1 < 20
+  [PASS] MATTR: short text mattr is None
+  [PASS] MATTR: has window_ttrs
+  [PASS] MATTR pilot calibration  => good_min=0.8788 moderate_min=0.8441
+  [PASS] MATTR thresholds saved to file
+
+-- 8. COHEN'S KAPPA --
+  [PASS] Kappa perfect agreement = 1.0  => 1.0
+  [PASS] Kappa zero agreement <= 0  => -1.0
+  [PASS] Kappa target met  => k=0.5455 target_met=False
+  [PASS] Kappa interpretation string
+  [PASS] Kappa from score dicts  => k=0.5455
+  [PASS] Kappa has action recommendation
+  [PASS] Kappa result saved to file
+
+-- 9. COMPOSITE USABILITY SCORE --
+  [PASS] CUS computes
+  [PASS] CUS in 0-100  => CUS=46.37
+  [PASS] CUS has 5 metric scores
+  [PASS] CUS classification valid  => Poor
+  [PASS] CUS scores sum check  => mean=46.37 CUS=46.37
+  [PASS] CUS comparison: has winner
+  [PASS] CUS comparison: has delta
+
+-- 10. SUS SCORE CALCULATOR --
+  [PASS] SUS max score = 100  => 100.0
+  [PASS] SUS min score = 0  => 0.0
+  [PASS] SUS neutral = 50  => 50.0
+  [PASS] SUS aggregate n=5
+  [PASS] SUS aggregate mean correct  => 77.0
+
+-- 11. CORRELATION AND REGRESSION --
+  [PASS] Correlation computes
+  [PASS] Pearson r in [-1,1]  => 0.4772
+  [PASS] Spearman rho in [-1,1]  => 0.6107
+  [PASS] n=30 no warning  => n is sufficient
+  [PASS] Regression computes
+  [PASS] R-squared in [0,1]  => 0.1165
+  [PASS] Weights sum to ~1.0  => 1.0002
+  [PASS] 5 metric weights
+  [PASS] Importance ranking
+
+-- 12. REPORT GENERATOR --
+  [Report] Saved to: C:\Users\YASHIKA\OneDrive\Desktop\AI-GTM\BTP\chatbot_usability_framework\results\reports\rasa_report_20261027_172036.txt
+  [PASS] Report: generated  => 4090 chars
+  [PASS] Report: has executive summary
+  [PASS] Report: has CUS section
+  [PASS] Report: has all 5 metrics
+  [PASS] Report: has tuning section
+  [PASS] Report: saved to disk
+
+============================================================
+  FINAL RESULT: 111 PASSED  |  0 FAILED
+============================================================
+
+  All components working correctly.
+
+  Metric scores (Rasa, mock mode):
+    Context Retention :    0.0 / 100  (Poor)
+    Response Time     :   98.5 / 100  (Good)
+    Helpful Response  :   80.0 / 100  (Moderate)
+    Lexical Diversity :    0.0 / 100  (N/A)
+    Error Rate        :   53.3 / 100  (Poor)
+    CUS (equal)       :   46.4 / 100  (Poor)
+
+  NOTE: Context Retention = 0 and Lexical Diversity = 0 in mock mode
+  is CORRECT -- the mock bot returns '[RASA MOCK] Received: ...'
+  which contains no vegetarian keywords and is too short for MATTR.
+  Real bot responses will produce real non-zero scores.
+============================================================
+

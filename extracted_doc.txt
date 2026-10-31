@@ -1,0 +1,165 @@
+Automatic Usability Testing Framework for Chatbots
+Final Year B.Tech Project — Master Document v2.0 (Revised)
+
+## [Heading1] 0. Research Novelty Statement
+We propose the first automated, multi-dimensional chatbot usability testing framework that: (a) requires zero human raters to produce a usability score, operating entirely from conversation logs; (b) compares a rule-based chatbot (Rasa) and an open-weight LLM-backed chatbot on a fixed, reusable 30-task standardised test bank; and (c) validates automated scores against human SUS judgments (n ≥ 30) using Pearson/Spearman correlation, with regression-derived metric weights as a secondary contribution identifying which usability dimension best predicts perceived quality.
+A 2026 systematic review (Clerissi et al., MSR 2026, arXiv:2602.13072) confirms this gap remains open — no existing tool combines automation, multi-turn usability measurement, LLM-era chatbot testing, and human-score validation in a single framework.
+
+## [Heading1] 1. Overview
+Chatbot usability is currently evaluated in one of two ways: through subjective, human-administered questionnaires (e.g. the Chatbot Usability Questionnaire, BUS-11/15), or through automated but narrowly correctness-focused testing frameworks that check whether a response is semantically right, without measuring usability itself. Neither gives developers a fast, objective, repeatable way to usability-test a chatbot.
+This project proposes a fully automated usability testing framework that scores open-source chatbots on five objective, log-derived metrics — context retention, average response time, helpful response ratio, lexical diversity (MATTR-50), and error rate — with no human raters required to produce a score, and validates those automated scores against a human SUS study (n ≥ 30).
+
+## [Heading1] 2. Base Papers
+
+[TABLE START]
+Paper | Role | Key Limitation Being Extended
+Atefi & Alipour (2019), An Automated Testing Framework for Conversational Agents, arXiv:1902.06193 | Technical base | Checks response correctness via word-embedding similarity only. No usability dimension — no latency, retention, lexical diversity, or error-rate scoring. Predates LLM-backed chatbots.
+Casas et al. (2020), Trends & Methods in Chatbot Evaluation, ACM ICMI, DOI:10.1145/3395035.3425319 | Gap justification | Confirms no standardised chatbot quality measure exists — every group defines its own criteria — and maps existing methods loosely onto ISO 9241 (effectiveness, efficiency, satisfaction).
+[TABLE END]
+
+
+## [Heading2] 2.1  Gap Still Open: 2024–2026 Evidence
+
+[TABLE START]
+Paper | Relevance
+Clerissi et al. (2026), Automated Testing of Task-based Chatbots: How Far Are We?, MSR 2026, arXiv:2602.13072 | Reviews 5 state-of-the-art chatbot testing tools (Botium, Charm, CTG, Asymob TCG, Tracer). Finds even in 2026 all tools remain limited to single request-response oracles, struggle with multi-turn conversations, and have no usability dimension. Confirms Atefi & Alipour's 2019 finding still holds.
+Liu et al. (2025), AI in Automated and Remote UX Evaluation: A Systematic Review (2014–2024), Advances in Human-Computer Interaction (Wiley) | 55-paper systematic review explicitly calling for standardised, automated evaluation frameworks — supports project motivation with current evidence.
+Chatbot Evaluation Frameworks: From BLEU and F1 to Multi-Dimensional Real-World Benchmarks, MSCE 2025, DOI:10.1145/3760023.3760060 | Argues standard NLP metrics (BLEU, F1) fail to capture real chatbot usability — the same argument behind the MATTR-50 metric replacing simple word-count ratios.
+[TABLE END]
+
+
+## [Heading1] 3. What This Project Improves Over Prior Work
+Adds a usability layer absent in Atefi & Alipour — their framework is pass/fail correctness testing; this adds five usability-specific, automatically computed metrics.
+Brings automated testing into the LLM era — the 2019 base framework predates LLM-backed chatbots; testing Rasa (rule-based) alongside an open-weight LLM bot is a direct empirical contribution.
+Fully automates what is normally manual — CUQ, BUS-11/15, and SUS all require live human participants; this framework needs zero human raters to produce a score.
+Replaces the unjustified 'Informative-Word Ratio' with MATTR-50 (Lexical Diversity) — a metric grounded in Covington & McFall (2010), Journal of Quantitative Linguistics 17(2):94–100.
+Validates against human perception — a SUS study (n ≥ 30 participants, minimum required for statistically meaningful Pearson r; Cohen 1988) runs alongside automated scores and the two are correlated.
+Regression-derived metric weights as a secondary finding — instead of assuming all five metrics matter equally, multiple linear regression of the five metric scores against SUS identifies which metric best predicts perceived usability.
+Validated LLM judge — Prometheus 2 (xAI, free, uncapped) is used as the primary LLM judge for the Helpful Response Ratio. Five turns are also scored by a human rater. Cohen's Kappa (κ ≥ 0.61 target) validates the LLM judge before full deployment.
+
+## [Heading1] 4. System Architecture
+The framework is a linear pipeline with one validation branch at the end:
+Test scenario corpus — the scripted question banks (Sheet 1 through Sheet 9 of the Master Workbook), each a themed multi-turn conversation with defined expected outcomes.
+Test orchestrator — sends each scripted message to a chatbot through a common adapter interface, records the response and timestamps.
+Chatbots under test — Rasa (rule/intent-based) and an open-weight LLM-backed bot (Ollama), each wrapped in its own adapter.
+Conversation logger — stores every exchange (message, response, timestamp, turn number, session ID) as the raw dataset.
+Metric engine — five modules: Context Retention, Response Time, Helpful Response Ratio, MATTR-50, Error Rate — all computed from the logged data only.
+Two parallel outputs — automated Composite Usability Score report, and human SUS validation study (30+ participants).
+Correlation + regression analysis — Pearson/Spearman r between CUS and SUS (primary result); multiple regression for metric weights (secondary result).
+Multi-metric concurrent scoring: Response Time and MATTR-50 are computed on every turn of every script (87 total turns across all five scripts). Context Retention, Helpful Response Ratio, and Error Rate each run only on their dedicated primary script — adding noise or checkpoints to other scripts would corrupt those controlled environments. RT + MATTR secondary readings from non-primary scripts serve as cross-validation data.
+
+## [Heading1] 5. Team Roles
+
+[TABLE START]
+Member | Owns
+A | Test orchestrator, chatbot adapters (Rasa + Ollama), conversation logging infrastructure.
+B | Metric engine — all five metric modules. MATTR Python script. Prometheus 2 judge integration. Cohen's Kappa calculation.
+C | Task bank design, human SUS/CUQ validation study (recruit 30 participants), dashboard, statistical correlation and regression analysis.
+[TABLE END]
+
+Build order: A builds harness → C finalises task bank → B implements metrics on real logs → C runs human study → C runs regression → all write up results.
+
+## [Heading1] 6. Comparison With Existing Approaches
+
+[TABLE START]
+Dimension | CUQ / BUS (2019–22) | Atefi & Alipour (2019) | Casas et al. (2020) | This Framework
+Automated (no human raters needed) | ✗ | ✓ | N/A (review) | ✓
+Covers usability, not just correctness | ✓ | ✗ | N/A (review) | ✓
+Works on LLM-backed chatbots | Partial | ✗ | N/A (review) | ✓
+Reusable, published task bank | ✗ | Partial | ✗ | ✓
+Validated against human SUS scores | ✓ (is the human score) | ✗ | ✗ | ✓
+Lexical diversity metric (MATTR) | ✗ | ✗ | ✗ | ✓ (new)
+LLM judge with inter-rater validation | ✗ | ✗ | ✗ | ✓ (κ reported)
+Regression-derived metric weights | ✗ | ✗ | ✗ | ✓ (secondary result)
+[TABLE END]
+
+
+## [Heading1] 7. Task Bank — Question Bank Summary
+Every chatbot under test is run through the same fixed scripted question banks. Full scripts are in the Master Workbook (v2). Summary:
+
+[TABLE START]
+Metric | Format | # Turns | Scoring Method | Theme
+Context Retention | 1 continuous script | 30 | Checkpoint pass rate % (6 checkpoints at turns 5,10,15,20,25,30) | Vegetarian diet → Italian cuisine → Italy travel
+Avg Response Time | 15-turn script | 15 | Average latency (ms) across all turns; burst tests at turns 6 & 13 | Setting up a smart home
+Helpful Response Ratio | 15-turn script | 15 | Rule check (8 turns) + Prometheus 2 judge (5 turns) + human spot-check (5 turns, Cohen's Kappa) | Job hunting assistant
+Lexical Diversity (MATTR-50) | 12-turn script | 12 | MATTR score per turn via Python script; average across scored turns (excl. < 20 words) | Personal finance Q&A
+Error Rate | 15-turn script | 15 | Breakdown count / 15. Taxonomy: Higashinaka et al. (2015) | Noisy customer support
+[TABLE END]
+
+
+## [Heading1] 8. Are the Metrics Justified?
+
+[TABLE START]
+Metric | Strength | Grounding | Citation
+Avg Response Time | Strong ✓✓ | Directly maps to ISO 9241-11 'efficiency'. 1 s and 10 s thresholds are established UX standards. | Nielsen (1993) Usability Engineering; Følstad & Skjuve (2019) Interacting with Computers 31(5)
+Error Rate | Strong ✓✓ | Uses Higashinaka et al. breakdown taxonomy (unclear intention, not understandable, ignored, not relevant, assumed incorrectly) — a recognized failure classification system, not invented. | Higashinaka et al. (2015) COLING 2015; industry benchmark reports (Comm100 2026 AI Live Chat Benchmark Report; OMQ Chatbot KPI Benchmarks)
+Context Retention | Justified ✓ | Maps to ISO 9241-11 'effectiveness'. 30-turn checkpoint design grounded in evidence that bots lose user facts after ~5 filler turns. | ISO 9241-11; pilot data (self-defined — no prior benchmark exists for this specific metric)
+Helpful Response Ratio | Justified ✓ | Construct sound (effectiveness). Scoring validated by Cohen's Kappa between Prometheus 2 judge and human rater. κ ≥ 0.61 required before trusting Prometheus 2 scores. | Følstad & Brandtzaeg (2017) Internet Science; Landis & Koch (1977) Biometrics 33(1) [Kappa standard]
+Lexical Diversity (MATTR-50) | Justified ✓ (replaces IWR) | MATTR is an established computational linguistics metric. Thresholds derived empirically from pilot data — NOT assumed. Framed as a hypothesis under test, correlated against SUS. | Covington & McFall (2010) Journal of Quantitative Linguistics 17(2):94–100 — canonical MATTR paper
+[TABLE END]
+
+Note: MATTR-50 thresholds (Good/Moderate/Poor) must be set from pilot data before the main test runs. Run 3 known-good responses and 3 known-padded responses through the MATTR script, observe the distribution, and set cutoffs at the observed median split. This is methodologically correct and more defensible than any pre-assumed threshold.
+
+## [Heading1] 9. Question Banks — Final Design
+
+[TABLE START]
+Metric | Format | Design Rationale
+Context Retention | 1 script, 30 turns | Single continuous vegetarian-diet-to-Italy-travel conversation. Turn 1 plants 'I'm vegetarian.' Checkpoints at turns 5, 10, 15, 20, 25, 30 test recall without restating the fact. Filler turns drift across topics (cuisine, travel, budget) to simulate a realistic session. Score = checkpoint pass rate %.
+Avg Response Time | 15 turns | Smart home setup conversation mixing: short factual (5 turns), long multi-clause (3 turns), reasoning (3 turns), retrieval-dependent (1 turn), and two rapid-fire bursts (turns 6 and 13) to test latency under load and latency drift over session time.
+Helpful Response Ratio | 15 turns | Job hunting assistant conversation. 8 turns use rule-based scoring (keyword/structure checks). 5 turns use Prometheus 2 as judge. 5 of these 15 are also human-scored. Cohen's Kappa computed on the 5 overlap turns to validate Prometheus 2 before trusting it for the full run.
+Lexical Diversity (MATTR-50) | 12 turns | Personal finance conversation cycling through: yes/no (2), explanation (3), step-by-step (3), opinion (2), and repeated questions (2). Matched question types (e.g., turns 3 and 8 are both step-by-step) allow direct MATTR comparison within the same question type. Responses < 20 words are excluded from averaging.
+Error Rate | 15 turns | Noisy customer support conversation: 4 typo-heavy, 3 ambiguous (no context), 3 out-of-scope, 3 two-turn contradictions, 2 incomplete/interrupted inputs, and 1 nonsensical-prefix real request. Each failure is tagged with Higashinaka et al. category. Deliberately kept separate from context retention to avoid confounding memory failure with noise-handling failure.
+[TABLE END]
+
+
+## [Heading1] 10. Scoring Methodology
+
+## [Heading2] 10.1  Thresholds With Specific Citations
+
+[TABLE START]
+Metric | Good | Moderate | Poor | Specific Citation (not heuristic)
+Avg Response Time | < 1,000 ms | 1,000–10,000 ms | > 10,000 ms | Nielsen (1993) Usability Engineering, p. 135 — 1 s = limit of flow; 10 s = attention lost. Reaffirmed: Følstad & Skjuve (2019) Interacting with Computers 31(5).
+Context Retention Rate | ≥ 83% (5–6/6 checkpoints) | 50–83% (3–4/6) | < 50% (0–2/6) | ISO 9241-11:2018 (effectiveness). Checkpoint design: pilot data (self-defined — no prior benchmark exists for this specific metric) (bots lose context after ~5 filler turns).
+Helpful Response Ratio | > 80% (≥ 12/15) | 60–80% (9–11/15) | < 60% (< 9/15) | Følstad & Brandtzaeg (2017) Internet Science, Springer LNCS 10673 — task completion expectation. Replicated: industry benchmark reports (Comm100 2026 AI Live Chat Benchmark Report; OMQ Chatbot KPI Benchmarks) (< 80% completion = not deployment-ready).
+Lexical Diversity (MATTR-50) | Set from pilot | Set from pilot | Set from pilot | Covington & McFall (2010) J. Quantitative Linguistics 17(2). Pilot-derived thresholds are methodologically correct — no prior standard exists and assuming one would be fabrication.
+Error Rate | < 10% (0–1 of 15) | 10–25% (2–3 of 15) | ≥ 25% (≥ 4 of 15) | industry benchmark reports (Comm100 2026 AI Live Chat Benchmark Report; OMQ Chatbot KPI Benchmarks) — < 10% fallback rate = deployment-ready. Taxonomy: Higashinaka et al. (2015) COLING 2015.
+[TABLE END]
+
+
+## [Heading2] 10.2  LLM Judge — Prometheus 2 + Cohen's Kappa Validation
+Prometheus 2 (Kim et al., EMNLP 2024) is used as the primary LLM judge for 5 of the 15 Helpful Response Ratio turns (turns 2, 3, 7, 10, 12, 13 — see Master Workbook Sheet 5). Prometheus 2 is free and uncapped via xAI's free tier, no API, no cost, no rate limits, fully reproducible.
+Five turns (2, 5, 7, 10, 14) are ALSO scored by a human rater independently. Cohen's Kappa (κ) is computed on those 5 turns.
+📌 Citation: Zheng et al. (2023) 'Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena', NeurIPS 2023 — formally documents self-preference bias in LLM judges (judge rates same-family models more favourably). Prometheus 2 mitigates this by design. Cohen's Kappa validation further catches any residual bias. Kappa scale: Landis & Koch (1977) Biometrics 33(1):159–174 — the standard Kappa interpretation scale: κ < 0.20 = slight | 0.21–0.40 = fair | 0.41–0.60 = moderate | 0.61–0.80 = substantial ✓ | > 0.80 = almost perfect. Target: κ ≥ 0.61. If not achieved, replace Prometheus 2 judge with full human scoring.
+
+## [Heading2] 10.3  Composite Usability Score (CUS)
+Each metric is normalized to 0–100 (inverted where lower-is-better: response time, error rate). Baseline CUS = equal-weighted average (20% each). Final CUS = regression-weighted average, where weights are derived from multiple linear regression of the five metric scores against the human SUS scores.
+The regression model itself is a secondary research contribution: it identifies empirically which of the five metrics best predicts perceived usability, rather than assuming all five matter equally. Equal-weighted CUS is retained as the baseline comparison model.
+
+## [Heading2] 10.4  Human Validation Study — n ≥ 30
+Minimum 30 human participants are required (post mid-sem). This is not arbitrary. For mid-sem: present the SUS questionnaire, recruitment plan, and scheduled dates — automated scoring runs first, human study runs in parallel after.
+📌 Citation: Cohen (1988) 'Statistical Power Analysis for the Behavioral Sciences', 2nd ed. — at n = 10, critical Pearson r (α = 0.05, two-tailed) = 0.632: almost any result is statistically non-significant. At n = 30, critical r drops to 0.361, making medium-effect correlations detectable. At n = 30, power to detect r = 0.5 (medium effect) exceeds 80% — the standard threshold for publishable results.
+Participants interact with each chatbot using the same 5 scripted tasks drawn from the question banks, then complete the standard 10-item SUS questionnaire (Brooke 1996). SUS is already normalized 0–100. CUS is also on 0–100. Pearson r is the primary validation result.
+
+## [Heading2] 10.5  Tuning Action Table
+
+[TABLE START]
+Metric Scoring Low | What It Means | Tuning Action
+Context Retention | Bot is not carrying facts forward across turns | Increase context window size; add a RAG retrieval step that re-injects earlier user facts before each response.
+Avg Response Time | Latency too high | Use a smaller/faster model variant, add response caching, reduce prompt length, or stream responses to the user.
+Helpful Response Ratio | Bot answers but misses the actual task | Improve system prompt / intent classification; add few-shot examples for weak intents in training data.
+Lexical Diversity (MATTR-50) | Bot is producing filler-heavy, repetitive responses | Add explicit conciseness instructions to the system prompt; penalize hedge phrases; remove filler tokens from generation settings.
+Error Rate | Bot breaks on typos, ambiguity, or out-of-scope inputs | Add input normalization (typo correction), a clarification-question fallback intent, and more diverse noisy training utterances.
+[TABLE END]
+
+
+## [Heading1] 11. MATTR-50 Implementation Note (for Member B)
+MATTR-50 is computed using a Python script (mattr_calculator.py). The algorithm: tokenize the bot response using NLTK word_tokenize → slide a window of 50 tokens across the token list (step = 1) → compute TTR (unique tokens / 50) for each window → average across all windows = MATTR score for that response (range 0–1).
+Responses with fewer than 20 tokens are flagged 'SHORT — EXCLUDE' and are not entered into the average. This prevents penalising a bot for giving a correct one-sentence answer.
+PILOT STEP (do this before main test runs): collect 3 known-good responses (accurate, specific, varied vocabulary) and 3 known-padded responses (filler-heavy, repetitive). Run both sets through the MATTR script. Record the distribution. Set Good/Moderate/Poor thresholds at the observed boundary between good and padded responses. Document these threshold values in the Master Workbook Sheet 8 before running the full test.
+
+## [Heading1] 12. Suggested Next Steps (Prioritised)
+TODAY: Finalise Rasa + Ollama setup. Decide the LLM model (Llama 3.1 8B or Mistral 7B via Ollama — both run locally, free).
+THIS WEEK: Build the orchestrator + adapters (Member A). Run a 5-turn pilot on the Context Retention script to confirm logging works end-to-end.
+THIS WEEK: Member B implements MATTR script and validates it on 3 known-good + 3 known-padded responses to set pilot thresholds.
+BEFORE MID-SEM: Have at least the Context Retention and Error Rate scripts fully run on both chatbots. Show live results in the demo.
+AFTER MID-SEM: Run all five question banks on both chatbots, run human SUS study (schedule post mid-sem — recruitment plan must be ready before mid-sem demo), run Cohen's Kappa on HR turns, compute CUS, run Pearson r and regression, draft results section.

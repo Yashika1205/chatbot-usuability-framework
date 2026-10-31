@@ -1,0 +1,16 @@
+turn_number,scoring_method,question,pass_criteria,judge_type
+1,rule,Can you help me improve this resume bullet: 'Worked on the marketing team'?,Rewritten bullet has action verb + measurable outcome and differs from original.,rule_check
+2,prometheus,What questions should I expect in a first-round interview for a marketing coordinator role?,Questions are specific to marketing coordinator first-round interview.,prometheus+human
+3,prometheus,How do I answer 'What's your biggest weakness?',"Gives concrete strategy or worked example, not just 'be honest'.",prometheus
+4,rule,Draft a short thank-you email to send after an interview.,Response contains greeting + body paragraph + closing line.,rule_check
+5,rule,What's a reasonable salary range to negotiate for an entry-level marketing role in a mid-size US city?,"Response contains at least one dollar figure, a range, or a named resource (Glassdoor/BLS).",rule_check+human
+6,rule,Can you review this cover letter opening line: 'I am writing to apply for this job.',Rewritten line differs from original and is more specific.,rule_check
+7,prometheus,How should I follow up if I haven't heard back in 2 weeks?,"Gives actionable steps — timing, tone, example wording.",prometheus+human
+8,rule,What certifications would help a marketing coordinator stand out?,"Names at least one real verifiable certification (Google Analytics, HubSpot, Meta Blueprint).",rule_check
+9,rule,Give me a 30-second elevator pitch template for a career fair.,Response includes a structured template with at least 2 placeholder brackets.,rule_check
+10,prometheus,How do I explain a 6-month employment gap in an interview?,Gives specific strategy — framing + example wording.,prometheus+human
+11,rule,What's the best way to research a company before an interview?,Contains at least 2 distinct concrete action items.,rule_check
+12,prometheus,Can you help me negotiate a signing bonus?,Includes specific negotiation language or a sample script.,prometheus
+13,prometheus,Should I mention my counteroffer to my current employer?,Takes a position or lays out clear trade-offs — does not dodge.,prometheus
+14,rule,What LinkedIn headline would work well for someone transitioning into UX design?,Contains a quoted or formatted example headline.,rule_check+human
+15,rule,"Summarize my strengths based on this resume snippet: 'Led a team of 5, increased conversion by 20%, managed $50k budget.'","Summary mentions all 3: team leadership, 20% conversion, $50k budget.",rule_check

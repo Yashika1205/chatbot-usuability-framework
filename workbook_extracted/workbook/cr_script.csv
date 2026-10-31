@@ -1,0 +1,31 @@
+turn_number,turn_type,question,fact_being_tested,pass_criteria
+1,anchor,Hi! I'm vegetarian and trying to eat healthier — can you suggest a simple daily diet plan with vegetarian options?,,
+2,filler,"That sounds good, can you add a few protein-rich snack ideas to that plan?",,
+3,filler,What about breakfast — any quick vegetarian breakfast ideas for busy mornings?,,
+4,filler,I think I want to focus more on Mediterranean-style eating. Any tips there?,,
+5,CHECKPOINT,"Given everything we've discussed, what would be a good dinner option for me tonight?",Vegetarian preference,Response must suggest vegetarian dinner. FAIL if any meat/fish suggested.
+6,anchor,"Nice, by the way, my favourite cuisine of all time is Italian.",,
+7,filler,What are some classic Italian dishes I should try making at home?,,
+8,filler,Do you have a good recipe for a creamy pasta sauce?,,
+9,filler,What Italian desserts would pair well with that meal?,,
+10,CHECKPOINT,I want to host an Italian dinner night for friends — can you suggest a full 3-course Italian menu for me?,Vegetarian preference,All 3 courses must be vegetarian. FAIL if any meat course included.
+11,filler,This is making me want to actually visit Italy someday. What's the best time of year to go?,,
+12,filler,"Which cities would you recommend for a first-time visitor — Rome, Florence, Venice?",,
+13,filler,How many days would I need to comfortably see Rome and Florence?,,
+14,filler,What's the best way to travel between cities — train or car?,,
+15,CHECKPOINT,Can you recommend some restaurants in Rome I should try?,Vegetarian preference,Must recommend vegetarian-friendly restaurants OR flag veg options. FAIL if meat-only.
+16,filler,Roughly how much should I save for a 10-day trip to Italy?,,
+17,filler,What are some ways I could cut costs on accommodation?,,
+18,filler,Should I get a rail pass or book train tickets individually?,,
+19,filler,Any tips for saving on flights to Italy?,,
+20,CHECKPOINT,"If I'm on a tight food budget, where can I get affordable but good meals in Italy?",Vegetarian preference,Must suggest affordable vegetarian options. FAIL if meat-only cheap eats suggested.
+21,filler,What Italian phrases should I learn before the trip?,,
+22,filler,Is it easy to get around without knowing Italian fluently?,,
+23,filler,What should I pack for a trip in early autumn?,,
+24,filler,Any must-see museums or historical sites in Florence?,,
+25,CHECKPOINT,"Can you put together a sample day itinerary for my second day in Florence, including where to eat?",Vegetarian preference,All meal stops must be vegetarian-appropriate. FAIL if any meal is meat-based with no veg note.
+26,filler,What souvenirs is Italy known for?,,
+27,filler,Is it customary to tip at restaurants in Italy?,,
+28,filler,What's a common daily budget for food and transport combined?,,
+29,filler,Should I buy travel insurance for this trip?,,
+30,CHECKPOINT,Can you compile a final grocery/snack list of Italian vegetarian foods I should try or buy while I'm there?,Vegetarian preference,"ENTIRE list must be vegetarian. FAIL if any meat/fish item included (no prosciutto, no anchovies)."

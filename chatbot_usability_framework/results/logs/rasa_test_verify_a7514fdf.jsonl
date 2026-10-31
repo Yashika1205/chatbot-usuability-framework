@@ -1,0 +1,2 @@
+{"session_id": "a7514fdf", "chatbot_name": "rasa", "script_name": "test_verify", "turn_number": 1, "timestamp_utc": "2026-10-27T17:13:44.490743+00:00", "user_message": "Hi", "bot_response": "Hello!", "latency_ms": 100.0}
+{"session_id": "a7514fdf", "chatbot_name": "rasa", "script_name": "test_verify", "turn_number": 2, "timestamp_utc": "2026-10-27T17:13:44.490757+00:00", "user_message": "Bye", "bot_response": "Goodbye!", "latency_ms": 90.0}

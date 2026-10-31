@@ -1,0 +1,148 @@
+run,script,bot,row_index,turn_number,question,response,latency_ms,history_msgs,history_gap,est_prompt_tokens,ctx_risk,eval_count,prompt_eval_count,load_ms,gen_ms,done_reason,timestamp,environment,scoring_method,pass_criteria,judge_type
+1,HR,Mistral,0,1,Can you help me improve this resume bullet: 'Worked on the marketing team'?," Absolutely! To make your bullet point more impactful and specific, you can rephrase it to highlight your achievements and responsibilities within the marketing team. Here are a few examples:
+
+1. Collaborated on marketing team initiatives, driving a 15% increase in social media engagement and a 20% boost in website traffic.
+2. Contributed to the marketing team, managing email campaigns and social media accounts that generated a 30% increase in leads and a 25% growth in sales.
+3. Assisted the marketing team in executing targeted campaigns, resulting in a 20% rise in customer acquisition and a 15% improvement in brand awareness.
+4. Developed and executed marketing strategies as a team member, resulting in a 15% increase in overall sales and a 20% boost in brand recognition.
+5. Collaborated with the marketing team to develop and implement marketing strategies, resulting in a 30% increase in website traffic and a 25% growth in social media followers.
+
+By quantifying your accomplishments and providing specific details, you can make your bullet point more engaging and effective.",9333.54,0,0,25,False,245,22,1.0,8764.6,stop,2026-10-26T13:58:55.756631,Colab_T4,rule,Rewritten bullet has action verb + measurable outcome and differs from original.,rule_check
+1,HR,Mistral,1,2,What questions should I expect in a first-round interview for a marketing coordinator role?," In a first-round interview for a marketing coordinator role, you can expect a mix of behavioral and technical questions. Here are some common questions you might encounter:
+
+1. Can you describe your experience with marketing coordination and your role within previous teams?
+2. How do you prioritize and manage multiple projects simultaneously?
+3. How do you stay organized and manage your workload effectively?
+4. Can you provide an example of a marketing campaign you have worked on and the results you achieved?
+5. How do you measure the success of a marketing campaign and what metrics do you focus on?
+6. Can you describe your experience with marketing automation software, such as Marketo or Pardot?
+7. How do you collaborate with cross-functional teams, such as sales and design, to ensure the success of marketing campaigns?
+8. Can you explain your approach to social media marketing and content creation?
+9. How do you stay up-to-date with the latest marketing trends and best practices?
+10. Can you describe a time when you faced a challenge or obstacle in a marketing project and how you overcame it?
+
+Preparing for these types of questions can help you feel more confident and perform well in your interview. Researching the company and the role beforehand can also help you tailor your answers to demonstrate your qualifications and enthusiasm for the position.",11306.23,2,0,418,False,296,289,0.9,10966.2,stop,2026-10-26T13:59:08.063662,Colab_T4,prometheus,Questions are specific to marketing coordinator first-round interview.,prometheus+human
+1,HR,Mistral,2,3,How do I answer 'What's your biggest weakness?',"  When answering the question ""What's your biggest weakness?"", it's important to choose a weakness that is not critical to the role you are applying for, and to frame it in a way that shows how you are actively working to improve. Here are some tips on how to answer this question effectively:
+
+1. Choose a weakness that is not essential to the role you are applying for, such as being too detail-oriented or working too hard.
+2. Frame your weakness as a challenge that you are actively working to overcome, rather than a permanent flaw.
+3. Explain the steps you are taking to improve, such as seeking feedback from colleagues, taking online courses, or seeking out opportunities to practice and develop your skills.
+4. Show how your weakness does not impact your ability to perform the job effectively.
+5. Emphasize your strengths and how they compensate for your weakness.
+
+For example, you could say: ""One area I am working to improve is my public speaking skills. I have always been a bit nervous when speaking in front of large groups, but I have been actively seeking out opportunities to practice and receive feedback. I have taken online courses to improve my presentation skills, and I have also joined a public speaking group to get more practice. However, I have found that my strong writing skills and attention to detail help me prepare effective presentations, even if I am still working to improve my delivery.""
+
+By framing your weakness as an area for improvement and emphasizing your strengths, you can show that you are self-aware and proactive in developing your skills.",12994.8,4,0,892,False,332,601,1.2,12569.9,stop,2026-10-26T13:59:22.059230,Colab_T4,prometheus,"Gives concrete strategy or worked example, not just 'be honest'.",prometheus
+1,HR,Mistral,3,4,Draft a short thank-you email to send after an interview.,"  Subject: Thank you for the opportunity to interview for the Marketing Coordinator position
+
+Dear [Interviewer's Name],
+
+I wanted to take a moment to express my sincere gratitude for the opportunity to interview for the Marketing Coordinator position at [Company Name] today. It was a pleasure to meet you and the rest of the team, and I was impressed by the company's culture and the exciting projects you are working on.
+
+I am confident that my skills and experience make me a strong fit for this role, and I am particularly excited about the opportunity to contribute to [specific project or aspect of the role]. I was also impressed by the collaborative and supportive atmosphere at [Company Name], and I believe that I would be a valuable addition to the team.
+
+Thank you again for considering me for this opportunity. I look forward to the opportunity to discuss my qualifications further, and I am eager to take the next steps in the hiring process.
+
+Sincerely,
+[Your Name]
+
+This thank-you email is brief and professional, while also expressing your enthusiasm for the position and the company. It is important to send a thank-you email after an interview to show your interest in the position and to stand out from other candidates.",10491.65,6,0,1441,False,267,950,1.3,10092.4,stop,2026-10-26T13:59:33.551673,Colab_T4,rule,Response contains greeting + body paragraph + closing line.,rule_check
+1,HR,Mistral,4,5,What's a reasonable salary range to negotiate for an entry-level marketing role in a mid-size US city?,"  The salary range for an entry-level marketing role in a mid-size US city can vary depending on factors such as the specific industry, location, and level of experience required. However, here are some general guidelines for entry-level marketing salaries in the United States:
+
+1. Entry-level marketing assistant or coordinator roles typically pay between $30,000 and $45,000 per year, depending on location and level of experience.
+2. Junior marketing roles, such as marketing coordinator or marketing specialist, typically pay between $45,000 and $60,000 per year, depending on location and level of experience.
+3. More senior marketing roles, such as marketing manager or marketing director, can pay between $60,000 and $100,000 per year or more, depending on location, industry, and level of experience.
+
+It's important to research the salary range for marketing roles in your specific location and industry to get a better idea of what to expect. You can use resources such as Glassdoor, Payscale, and the Bureau of Labor Statistics to find this information. When negotiating salary, it's important to consider factors such as your level of experience, the level of responsibility you will be taking on, and the value you will bring to the company. It's also important to be prepared to justify your salary expectations and to be flexible during negotiations.",11838.61,8,0,1888,False,308,1245,1.1,11481.1,stop,2026-10-26T13:59:46.390971,Colab_T4,rule,"Response contains at least one dollar figure, a range, or a named resource (Glassdoor/BLS).",rule_check+human
+1,HR,Mistral,5,6,Can you review this cover letter opening line: 'I am writing to apply for this job.',"   The opening line ""I am writing to apply for this job"" is a common and straightforward way to begin a cover letter. However, you can make it more engaging by personalizing it and tailoring it to the specific job and company. Here are a few ways you can rephrase the opening line to make it more effective:
+
+1. ""Excited to apply for the Marketing Coordinator position at [Company Name]""
+2. ""I am writing to express my interest in the Marketing Coordinator role at [Company Name]""
+3. ""I am reaching out to inquire about the Marketing Coordinator position at [Company Name]""
+4. ""I am a highly motivated and detail-oriented marketing professional with [number of years of experience] in [specific area of marketing], and I am writing to apply for the Marketing Coordinator position at [Company Name]""
+
+By personalizing the opening line and showing your enthusiasm for the specific job and company, you can make a stronger first impression and stand out from other candidates. It's also important to tailor your cover letter to the specific job and company, and to highlight your qualifications and experience that are most relevant to the position.",9712.42,10,0,2372,False,251,1575,1.0,9326.3,stop,2026-10-26T13:59:57.104093,Colab_T4,rule,Rewritten line differs from original and is more specific.,rule_check
+1,HR,Mistral,6,7,How should I follow up if I haven't heard back in 2 weeks?,"   If you haven't heard back from a company after two weeks, it's acceptable to follow up to check on the status of your application. Here are some tips for following up effectively:
+
+1. Start by checking the company's website or job posting to see if there is any information about the expected timeline for the hiring process.
+2. If there is no information about the timeline, you can send a polite and professional email to the person who you interviewed with or the hiring manager, expressing your interest in the position and inquiring about the status of your application.
+3. Be sure to mention specific details about the position and your interview, to show that you are serious about the opportunity and to help the person remember your application.
+4. Be patient and professional in your follow-up, and avoid being pushy or aggressive.
+5. If you don't receive a response after a week or two, it's generally acceptable to send a second follow-up email. If you still haven't heard back after a second follow-up, it's probably best to assume that you were not selected for the position and to move on to other opportunities.
+
+By following up in a professional and respectful manner, you can show your continued interest in the position and increase your chances of being considered for it. It's also important to be prepared for the possibility that you may not receive a response, and to move on to other opportunities if necessary.",11836.72,12,0,2773,False,309,1846,1.3,11499.8,stop,2026-10-26T14:00:09.941589,Colab_T4,prometheus,"Gives actionable steps — timing, tone, example wording.",prometheus+human
+1,HR,Mistral,7,8,What certifications would help a marketing coordinator stand out?,"    There are several certifications that can help a marketing coordinator stand out and demonstrate their expertise in specific areas of marketing. Here are some of the most relevant certifications for a marketing coordinator:
+
+1. Certified Marketing Professional (CMP) - offered by the Marketing Institute, this certification is designed for marketing professionals with at least two years of experience, and covers topics such as marketing strategy, research, analytics, and digital marketing.
+2. Google Analytics Individual Qualification (GAIQ) - this certification demonstrates proficiency in using Google Analytics to measure and analyze website traffic and performance.
+3. HubSpot Inbound Marketing Certification - this certification demonstrates proficiency in inbound marketing strategies, such as content marketing, social media marketing, and lead generation.
+4. Hootsuite Social Media Marketing Certification - this certification demonstrates proficiency in social media marketing, including best practices for creating and managing social media campaigns.
+5. Social Media Marketing World Certification - offered by Social Media Examiner, this certification covers topics such as social media strategy, content creation, and social media advertising.
+
+By earning one or more of these certifications, a marketing coordinator can demonstrate their expertise in specific areas of marketing and stand out from other candidates. It's important to choose certifications that are relevant to the specific role and company you are applying for, and to be prepared to explain how the certification will help you perform the job effectively.",11849.94,14,0,3274,False,304,2170,2.4,11467.4,stop,2026-10-26T14:00:22.792244,Colab_T4,rule,"Names at least one real verifiable certification (Google Analytics, HubSpot, Meta Blueprint).",rule_check
+1,HR,Mistral,8,9,Give me a 30-second elevator pitch template for a career fair.,"    An elevator pitch is a concise and persuasive summary of your professional background and qualifications, designed to capture the interest of potential employers in a short amount of time. Here is a template for a 30-second elevator pitch for a career fair:
+
+1. Start with a strong opening statement: ""Hi, I'm [Your Name], a [Your Title/Position] with [Number of Years of Experience] in [Specific Area of Marketing].""
+2. Highlight your key skills and qualifications: ""I have a proven track record of [specific accomplishment or skill], such as [example of a successful campaign or project you worked on].""
+3. Explain your career goals: ""I am passionate about [specific area of marketing or industry] and am seeking a [specific role or opportunity] with a company that [specifically states what you are looking for in a company or role].""
+4. End with a call to action: ""If you're interested in learning more about my qualifications and how I can contribute to your team, I'd love to set up a meeting to discuss further.""
+
+By following this template, you can create a compelling and memorable 30-second elevator pitch that will help you stand out at a career fair and make a strong first impression on potential employers. It's important to practice your elevator pitch beforehand, and to tailor it to the specific role and company you are interested in.",12097.9,16,0,3843,False,308,2493,1.1,11708.9,stop,2026-10-26T14:00:35.890936,Colab_T4,rule,Response includes a structured template with at least 2 placeholder brackets.,rule_check
+1,HR,Mistral,9,10,How do I explain a 6-month employment gap in an interview?,"     Explaining an employment gap in an interview can be challenging, but it's important to be honest and upfront about the situation. Here are some tips for explaining an employment gap in an interview:
+
+1. Be prepared: Have a clear and concise explanation for the gap in employment, and practice it beforehand so you can deliver it smoothly and confidently.
+2. Focus on the positive: Emphasize any positive experiences or accomplishments you had during the gap in employment, such as volunteering, taking classes, or traveling.
+3. Be honest: It's important to be honest about the reasons for the gap in employment, whether it was due to personal reasons, a job loss, or a career transition.
+4. Show that you are ready to work: Emphasize your readiness to re-enter the workforce and your motivation to succeed in the role you are applying for.
+5. Emphasize your qualifications: Highlight your relevant skills and qualifications, and explain how they make you a strong fit for the position.
+6. Avoid dwelling on the past: While it's important to explain the gap in employment, it's also important to focus on the future and how you can contribute to the company.
+
+By being honest, focused on the positive, and emphasizing your qualifications and readiness to work, you can effectively explain an employment gap in an interview and demonstrate your value as a candidate. It's important to approach the question with confidence and to show that you are ready to move forward and make a positive contribution to the company.",13200.69,18,0,4314,False,332,2819,1.5,12799.2,stop,2026-10-26T14:00:50.092414,Colab_T4,prometheus,Gives specific strategy — framing + example wording.,prometheus+human
+1,HR,Mistral,10,11,What's the best way to research a company before an interview?,"    Researching a company before an interview is an important step in preparing for the interview and demonstrating your interest in the position. Here are some tips for researching a company before an interview:
+
+1. Visit the company's website: Start by visiting the company's website to learn about its products, services, mission, and values.
+2. Research the company's history: Learn about the company's history, including when it was founded, its key milestones, and any major changes or events that have shaped its growth.
+3. Check out the company's culture: Look for information about the company's culture, such as its values, work environment, and employee benefits.
+4. Read recent news articles: Check out recent news articles about the company to learn about any major developments or changes.
+5. Research the industry: Learn about the industry in which the company operates, including any trends, challenges, and opportunities.
+6. Look at the company's social media accounts: Check out the company's social media accounts to get a sense of its culture, values, and brand.
+7. Research the role and team: Learn about the specific role you are applying for, as well as the team you would be working with, and any relevant projects or initiatives.
+
+By researching the company before an interview, you can demonstrate your interest in the position and show that you are well-informed and prepared. It's important to be thorough in your research, and to tailor your answers to the specific company and role during the interview.",13071.05,20,0,4842,False,328,3168,2.7,12613.8,stop,2026-10-26T14:01:04.164145,Colab_T4,rule,Contains at least 2 distinct concrete action items.,rule_check
+1,HR,Mistral,11,12,Can you help me negotiate a signing bonus?,"     Negotiating a signing bonus can be a challenging but worthwhile process, and it's important to approach it with confidence and a clear understanding of your value as a candidate. Here are some tips for negotiating a signing bonus:
+
+1. Research the market: Research the average signing bonuses for similar roles in your industry and location to get a sense of what is reasonable to ask for.
+2. Understand your value: Understand your skills, qualifications, and experience, and how they make you a valuable asset to the company.
+3. Be clear about your expectations: Be clear about your expectations for a signing bonus, and explain why you believe you deserve one.
+4. Provide evidence: Provide evidence to support your case for a signing bonus, such as examples of your past accomplishments, testimonials from previous employers, or data on the value you bring to the company.
+5. Be flexible: Be flexible in your negotiations, and be willing to compromise on other aspects of the offer if necessary.
+6. Be professional: Be professional and respectful in your negotiations, and avoid being pushy or aggressive.
+7. Be prepared to walk away: Be prepared to walk away from the offer if you are not satisfied with the signing bonus, or if the company is not willing to negotiate.
+
+By approaching the negotiation with confidence, understanding your value, and providing evidence to support your case, you can increase your chances of securing a signing bonus. It's important to be prepared to walk away if necessary, and to keep your negotiations professional and respectful throughout the process.",13412.07,22,0,5367,False,336,3509,1.4,12963.4,stop,2026-10-26T14:01:18.576978,Colab_T4,prometheus,Includes specific negotiation language or a sample script.,prometheus
+1,HR,Mistral,12,13,Should I mention my counteroffer to my current employer?,"      Whether or not to mention your counteroffer from a potential new employer to your current employer can be a complex decision, and it's important to consider the potential consequences carefully. Here are some factors to consider when deciding whether to mention your counteroffer:
+
+1. The terms of the counteroffer: If the counteroffer significantly improves your current compensation and benefits package, it may be worth mentioning to your current employer.
+2. The relationship with your current employer: If you have a good relationship with your current employer and feel that they value you as an employee, it may be worth discussing the counteroffer with them to see if they are willing to match or improve your compensation and benefits.
+3. The potential consequences: If you mention the counteroffer to your current employer and they are not willing to match or improve your compensation and benefits, it could damage the relationship and make it difficult to negotiate in the future.
+4. The potential impact on your career: If you accept the new job and then have to leave your current job abruptly, it could impact your career and professional reputation.
+
+Ultimately, whether or not to mention your counteroffer to your current employer is a personal decision, and it's important to weigh the potential benefits and risks carefully. It may be helpful to speak with a mentor or career coach to get advice on the best approach for your specific situation.",11837.14,24,0,5917,False,294,3860,1.6,11374.5,stop,2026-10-26T14:01:31.414905,Colab_T4,prometheus,Takes a position or lays out clear trade-offs — does not dodge.,prometheus
+1,HR,Mistral,13,14,What LinkedIn headline would work well for someone transitioning into UX design?,"     A strong LinkedIn headline can help you stand out to potential employers and recruiters, and it's important to choose a headline that accurately reflects your skills, qualifications, and career goals. For someone transitioning into UX design, a good LinkedIn headline might be something like:
+
+1. User Experience Designer with [Number of Years of Experience] in [Specific Area of Design]
+2. User-Centered Designer specializing in [Specific Skills or Tools]
+3. UX Designer and Researcher with a passion for creating intuitive and user-friendly experiences
+4. Designing for user experience: [Number of Years of Experience] in [Specific Area of Design]
+5. Transitioning into UX design: Experienced [Specific Area of Design] professional seeking to apply my skills to user-centered design
+
+By choosing a headline that accurately reflects your skills and qualifications, and that shows your passion for UX design, you can attract the attention of potential employers and recruiters in the field. It's important to tailor your headline to the specific role and company you are interested in, and to make sure it is clear and concise.",10490.19,26,0,6434,False,259,4174,2.3,10064.6,stop,2026-10-26T14:01:42.905913,Colab_T4,rule,Contains a quoted or formatted example headline.,rule_check+human
+1,HR,Mistral,14,15,"Summarize my strengths based on this resume snippet: 'Led a team of 5, increased conversion by 20%, managed $50k budget.'","      Based on the resume snippet provided, the following are some strengths that can be inferred:
+
+1. Leadership: The candidate has demonstrated the ability to lead a team of 5 people.
+2. Results-oriented: The candidate has increased conversion by 20%, which suggests a focus on achieving measurable results.
+3. Financial management: The candidate has managed a budget of $50,000, which indicates an ability to manage financial resources effectively.
+4. Collaboration: The candidate has likely worked with other teams or departments to achieve their goals, as demonstrated by the team leadership and collaboration required to increase conversion.
+5. Problem-solving: The candidate has likely had to identify and solve problems in order to achieve the 20% increase in conversion, which suggests an ability to think creatively and strategically.
+
+By highlighting these strengths, the candidate can demonstrate their qualifications and value to potential employers, and increase their chances of being selected for job opportunities. It's important to make sure the strengths are clearly and concisely stated, and to provide evidence to support them throughout the resume.",9747.48,28,0,6851,False,238,4471,1.8,9320.2,stop,2026-10-26T14:01:53.654126,Colab_T4,rule,"Summary mentions all 3: team leadership, 20% conversion, $50k budget.",rule_check

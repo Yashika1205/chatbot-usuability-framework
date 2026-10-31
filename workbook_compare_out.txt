@@ -1,0 +1,259 @@
+======================================================================
+  WORKBOOK vs MY task_bank.py � DETAILED COMPARISON
+======================================================================
+
+======================================================================
+  CR  |  Workbook=30 rows (30 unique turns)  |  My task_bank=30 turns
+======================================================================
+  [MATCH] Turn count: both = 30
+
+  Question comparison (workbook vs mine):
+  T 1 [~] WB: "Hi! I'm vegetarian and trying to eat healthier � can you sug"
+       MY: "Hi! Just so you know, I'm vegetarian. I want to explore food"
+  T 2 [X] WB: 'That sounds good, can you add a few protein-rich snack ideas'
+       MY: "What's your favourite season?"
+  T 3 [~] WB: 'What about breakfast � any quick vegetarian breakfast ideas '
+       MY: 'Tell me about the Mediterranean diet.'
+  T 4 [X] WB: 'I think I want to focus more on Mediterranean-style eating. '
+       MY: 'Is olive oil good for health?'
+  T 5 [X] WB: "Given everything we've discussed, what would be a good dinne"
+       MY: 'Can you suggest a dinner for me tonight?'
+  T 6 [X] WB: 'Nice, by the way, my favourite cuisine of all time is Italia'
+       MY: 'What Italian dishes are popular?'
+  T 7 [X] WB: 'What are some classic Italian dishes I should try making at '
+       MY: 'Do Italians eat a lot of pasta?'
+  T 8 [X] WB: 'Do you have a good recipe for a creamy pasta sauce?'
+       MY: 'What is risotto?'
+  T 9 [~] WB: 'What Italian desserts would pair well with that meal?'
+       MY: 'Are there good vegetarian options in Italian cuisine?'
+  T10 [X] WB: 'I want to host an Italian dinner night for friends � can you'
+       MY: "I'm planning a dinner party. What should I cook?"
+  T11 [X] WB: 'This is making me want to actually visit Italy someday. What'
+       MY: 'Tell me about Rome.'
+  T12 [X] WB: 'Which cities would you recommend for a first-time visitor � '
+       MY: "What's the best time of year to visit Italy?"
+  T13 [X] WB: 'How many days would I need to comfortably see Rome and Flore'
+       MY: 'How expensive is travelling in Italy?'
+  T14 [X] WB: "What's the best way to travel between cities � train or car?"
+       MY: 'What are some less-touristy Italian cities?'
+  T15 [X] WB: 'Can you recommend some restaurants in Rome I should try?'
+       MY: 'What should I keep in mind about eating out in Italy?'
+  T16 [X] WB: 'Roughly how much should I save for a 10-day trip to Italy?'
+       MY: 'Is Italian public transport good?'
+  T17 [~] WB: 'What are some ways I could cut costs on accommodation?'
+       MY: 'What language do Italians speak?'
+  T18 [X] WB: 'Should I get a rail pass or book train tickets individually?'
+       MY: 'Tell me about the Amalfi Coast.'
+  T19 [X] WB: 'Any tips for saving on flights to Italy?'
+       MY: 'What budget should I plan for a week in Italy?'
+  T20 [X] WB: "If I'm on a tight food budget, where can I get affordable bu"
+       MY: 'What restaurants should I look for on my Italy trip?'
+  T21 [X] WB: 'What Italian phrases should I learn before the trip?'
+       MY: 'Do you think Florence or Venice is better to visit first?'
+  T22 [X] WB: 'Is it easy to get around without knowing Italian fluently?'
+       MY: 'What is tiramisu made of?'
+  T23 [X] WB: 'What should I pack for a trip in early autumn?'
+       MY: 'Are there good street food options in Italian cities?'
+  T24 [X] WB: 'Any must-see museums or historical sites in Florence?'
+       MY: 'What is the tipping culture in Italy?'
+  T25 [X] WB: 'Can you put together a sample day itinerary for my second da'
+       MY: 'I need to plan my meals for a week in Italy. Any advice?'
+  T26 [~] WB: 'What souvenirs is Italy known for?'
+       MY: 'What is gelato?'
+  T27 [X] WB: 'Is it customary to tip at restaurants in Italy?'
+       MY: 'How do Italians feel about tourists?'
+  T28 [X] WB: "What's a common daily budget for food and transport combined"
+       MY: 'What should I pack for Italy in the summer?'
+  T29 [~] WB: 'Should I buy travel insurance for this trip?'
+       MY: 'Any safety tips for travelling in Italy?'
+  T30 [X] WB: 'Can you compile a final grocery/snack list of Italian vegeta'
+       MY: 'Final question: what is the most important thing to remember'
+
+  Summary: 6 match/similar  |  24 different
+
+  Workbook columns: ['turn_number', 'turn_type', 'question', 'fact_being_tested', 'pass_criteria']
+  Turn types: ['CHECKPOINT', 'anchor', 'filler']
+
+======================================================================
+  RT  |  Workbook=19 rows (15 unique turns)  |  My task_bank=15 turns
+======================================================================
+  [MATCH] Turn count: both = 15
+
+  Question comparison (workbook vs mine):
+  T 1 [~] WB: "What's a smart plug?"
+       MY: 'What is a smart home?'
+  T 2 [X] WB: 'Do smart bulbs work without a hub?'
+       MY: 'What devices can I connect?'
+  T 3 [X] WB: "I'm setting up a smart home in a 2-bedroom apartment with a "
+       MY: 'Do I need a hub?'
+  T 4 [X] WB: "What's the difference between Zigbee and Wi-Fi smart devices"
+       MY: 'What is Zigbee?'
+  T 5 [X] WB: 'If I already have 4 smart bulbs on one hub and want to add 6'
+       MY: 'Is Z-Wave better than Zigbee?'
+  T 6 [X] WB: 'hey'
+       MY: 'Give me the top 5 smart home devices, top 3 protocols, and t'
+  T 7 [X] WB: 'I want to automate my morning routine � lights turning on gr'
+       MY: 'Walk me through the complete setup process for a smart home,'
+  T 8 [~] WB: 'Can Alexa and Google Home be used together?'
+       MY: 'Compare Google Home, Amazon Alexa, and Apple HomeKit in term'
+  T 9 [X] WB: "What does your product page say about the smart lock's batte"
+       MY: 'Explain in detail how a smart thermostat saves energy and wh'
+  T10 [~] WB: 'I have 15 devices total across 3 rooms � how should I organi'
+       MY: 'If I already have Philips Hue lights and a Google Nest Hub, '
+  T11 [X] WB: 'Is there a free app for controlling multiple smart brands?'
+       MY: 'My internet cuts out sometimes. How will that affect my smar'
+  T12 [~] WB: "I'm worried about privacy � can you explain what data smart "
+       MY: 'Retrieval question: what are the known privacy vulnerabiliti'
+  T13 [X] WB: 'one more thing'
+       MY: 'List all the automations I can set up with Google Home, Phil'
+  T14 [X] WB: 'If my Wi-Fi goes down, will my existing automations still ru'
+       MY: 'Summarise the three biggest mistakes people make when settin'
+  T15 [X] WB: "What's a mesh Wi-Fi system?"
+       MY: 'Thank you! What should I do first this weekend?'
+
+  Summary: 4 match/similar  |  11 different
+
+  Workbook columns: ['turn_number', 'turn_type', 'question']
+  Turn types: ['long_multiclause', 'rapid_burst_1', 'rapid_burst_2', 'rapid_burst_3', 'reasoning', 'retrieval', 'short_factual']
+
+======================================================================
+  HR  |  Workbook=15 rows (15 unique turns)  |  My task_bank=15 turns
+======================================================================
+  [MATCH] Turn count: both = 15
+
+  Question comparison (workbook vs mine):
+  T 1 [X] WB: "Can you help me improve this resume bullet: 'Worked on the m"
+       MY: "I'm looking for a software engineering job. Can you help?"
+  T 2 [X] WB: 'What questions should I expect in a first-round interview fo'
+       MY: 'I have 2 years of experience in Python and have worked at a '
+  T 3 [X] WB: "How do I answer 'What's your biggest weakness?'"
+       MY: 'Can you write me a tailored resume summary for a mid-level P'
+  T 4 [X] WB: 'Draft a short thank-you email to send after an interview.'
+       MY: 'What are the top 5 skills I need to highlight for a backend '
+  T 5 [X] WB: "What's a reasonable salary range to negotiate for an entry-l"
+       MY: 'How should I prepare for a technical interview?'
+  T 6 [X] WB: "Can you review this cover letter opening line: 'I am writing"
+       MY: 'Write a cover letter opening paragraph for a Python develope'
+  T 7 [~] WB: "How should I follow up if I haven't heard back in 2 weeks?"
+       MY: 'What questions should I ask the interviewer at the end?'
+  T 8 [X] WB: 'What certifications would help a marketing coordinator stand'
+       MY: 'How do I negotiate salary for a mid-level Python developer r'
+  T 9 [X] WB: 'Give me a 30-second elevator pitch template for a career fai'
+       MY: 'What LinkedIn profile sections matter most to recruiters?'
+  T10 [X] WB: 'How do I explain a 6-month employment gap in an interview?'
+       MY: 'I got rejected after a final round. What should I do?'
+  T11 [X] WB: "What's the best way to research a company before an intervie"
+       MY: 'How long should my resume be?'
+  T12 [~] WB: 'Can you help me negotiate a signing bonus?'
+       MY: 'Can you help me prepare for a system design interview?'
+  T13 [X] WB: 'Should I mention my counteroffer to my current employer?'
+       MY: 'What are common mistakes people make on their GitHub profile'
+  T14 [X] WB: 'What LinkedIn headline would work well for someone transitio'
+       MY: "I'm feeling discouraged. Is it normal for the job hunt to ta"
+  T15 [X] WB: "Summarize my strengths based on this resume snippet: 'Led a "
+       MY: 'Thank you! Can you summarise the top 3 action items I should'
+
+  Summary: 2 match/similar  |  13 different
+
+  Workbook columns: ['turn_number', 'scoring_method', 'question', 'pass_criteria', 'judge_type']
+  Judge types: ['prometheus', 'prometheus+human', 'rule_check', 'rule_check+human']
+  Scoring methods: ['prometheus', 'rule']
+
+======================================================================
+  MATTR  |  Workbook=12 rows (12 unique turns)  |  My task_bank=12 turns
+======================================================================
+  [MATCH] Turn count: both = 12
+
+  Question comparison (workbook vs mine):
+  T 1 [X] WB: 'Is a Roth IRA taxed on withdrawal?'
+       MY: 'Should I keep an emergency fund?'
+  T 2 [~] WB: 'Explain how compound interest works.'
+       MY: 'What is compound interest?'
+  T 3 [X] WB: 'How do I set up a monthly budget from scratch?'
+       MY: 'How do I create a monthly budget from scratch?'
+  T 4 [~] WB: 'Is it better to pay off debt or invest first?'
+       MY: 'Is it better to pay off debt or invest?'
+  T 5 [~] WB: 'What does the term APR stand for?'
+       MY: 'Explain what an index fund is.'
+  T 6 [X] WB: 'Do I need good credit to open a savings account?'
+       MY: 'What is the difference between a Roth IRA and a traditional '
+  T 7 [X] WB: 'Explain the difference between a credit union and a bank.'
+       MY: 'What is your opinion on cryptocurrency as an investment?'
+  T 8 [~] WB: 'How do I build an emergency fund?'
+       MY: 'How do I build an investment portfolio as a beginner?'
+  T 9 [X] WB: 'Should a beginner investor buy individual stocks or index fu'
+       MY: 'Do you think real estate is a better investment than stocks?'
+  T10 [X] WB: 'What does APR stand for, one more time � quickly?'
+       MY: 'How do I track my expenses effectively?'
+  T11 [~] WB: 'Explain what a credit score actually measures.'
+       MY: 'Explain how inflation affects savings.'
+  T12 [X] WB: 'How do I dispute an error on my credit report?'
+       MY: 'What are the biggest personal finance mistakes young people '
+
+  Summary: 5 match/similar  |  7 different
+
+  Workbook columns: ['turn_number', 'question_type', 'question']
+
+======================================================================
+  ER  |  Workbook=18 rows (15 unique turns)  |  My task_bank=15 turns
+======================================================================
+  [MATCH] Turn count: both = 15
+
+  Question comparison (workbook vs mine):
+  T 1 [X] WB: 'wehre is my odrer nubmer 4521'
+       MY: 'I wnat to retrun my oreder from lst week'
+  T 2 [X] WB: 'can you fix the thing from earlier'
+       MY: 'Wen wil my pacckage arive???'
+  T 3 [X] WB: "what's the weather in Paris right now"
+       MY: 'i ned to cancl my subscrpition pleas'
+  T 4 [X] WB: 'I want to return the shoes.'
+       MY: 'pasword rst not wrking helppp'
+  T 5 [X] WB: 'I wanted to ask about my refund but actually�'
+       MY: "It's still not working."
+  T 6 [X] WB: 'purple socks Tuesday refund banana'
+       MY: 'Can you just fix it?'
+  T 7 [X] WB: 'hw mnuch is shppng to cnada'
+       MY: 'The thing I bought.'
+  T 8 [X] WB: 'when will it arrive'
+       MY: 'What is the capital of France?'
+  T 9 [X] WB: 'can you also book me a flight'
+       MY: 'Can you write me a poem about summer?'
+  T10 [X] WB: 'Cancel my order.'
+       MY: 'Who won the football match last night?'
+  T11 [X] WB: "so about the discount code, it's�"
+       MY: 'I want to cancel my order.'
+  T12 [X] WB: 'asdkj give me warranty info please'
+       MY: "Actually no, I don't want to cancel, I want to change the ad"
+  T13 [X] WB: 'waht is ur retrun policey'
+       MY: 'Wait, I changed my mind again. Just cancel everything.'
+  T14 [X] WB: 'is it still available'
+       MY: 'I would like to'
+  T15 [X] WB: 'I never received my package.'
+       MY: 'Blorp florp wibble. How do I track my order?'
+
+  Summary: 0 match/similar  |  15 different
+
+  Workbook columns: ['turn_number', 'noise_type', 'question', 'pass_criteria', 'breakdown_category']
+  Noise types: ['ambiguous', 'contradiction_t1', 'contradiction_t2', 'incomplete', 'nonsense', 'nonsense_prefix', 'out_of_scope', 'typo']
+
+
+======================================================================
+  VERDICT
+======================================================================
+
+The pipeline_v3.py that ran on Colab used YOUR workbook CSVs directly
+(cr_script.csv, hr_script.csv, etc.) as the source of truth.
+
+My task_bank.py was built INDEPENDENTLY from reading the framework document
+(Chatbot_Usability_Framework_v4_FINAL.docx), not from your workbook CSVs.
+
+The questions are DIFFERENT because:
+  - Your workbook has the REAL, final, agreed questions your team designed
+  - My task_bank.py has questions I wrote from scratch based on the document
+    descriptions (e.g. 'vegetarian diet -> Italian cuisine -> Italy travel')
+
+What this means for the project:
+  - The actual experiment (your Colab run) used YOUR workbook � CORRECT
+  - My task_bank.py was never used in any real run � it was for mock testing only
+  - The framework should continue using YOUR workbook CSVs as the script source
+

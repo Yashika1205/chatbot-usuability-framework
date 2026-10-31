@@ -1,0 +1,5 @@
+,CR,CR,RT_ms,RT_ms,HR,HR,MATTR,MATTR,ER_pct,ER_pct,CUS,CUS
+,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std
+bot,,,,,,,,,,,,
+Llama3,33.3,0.0,17560.03,858.46,100.0,0.0,0.74,0.01,8.9,3.81,59.64,0.66
+Mistral,11.13,9.64,10369.43,2048.44,84.43,10.19,0.76,0.01,20.0,6.7,51.54,1.57

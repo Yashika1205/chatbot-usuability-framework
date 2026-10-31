@@ -1,0 +1,139 @@
+{
+  "Llama3": {
+    "2": {
+      "score": 5,
+      "pass": true,
+      "pass_ge3": true,
+      "feedback": "The response provided a comprehensive list of interview questions that are specific to a first-round marketing coordinator interview. It included a mix of behavioral, situational, and technical questions, which are all relevant to the role. The questions were well-organized and covered a wide range of topics, from coordinating large-scale events to managing social media accounts and understanding marketing software. Additionally, the response included company-specific questions, which are important for demonstrating an understanding of the company's products, services, and culture. The response also provided advice on how to answer the questions, such as being specific with examples and showing enthusiasm for the role. This advice is valuable for a candidate preparing for an interview. Overall, the response met the criteria of the score rubric by providing a well-organized list of role-specific, plausible first-round questions. So the score is 5. [RESULT] 5",
+      "auto": false
+    },
+    "3": {
+      "score": 4,
+      "pass": true,
+      "pass_ge3": true,
+      "feedback": "The response provides a clear framework for answering the question about one's biggest weakness. It outlines the importance of being honest, specific, and proactive in addressing areas for improvement. The response also includes three example answers that demonstrate how to frame a weakness as an opportunity for growth and improvement. Each example is accompanied by a description of the steps taken to address the weakness, which aligns with the score rubric's requirement for a worked example answer.\n\nHowever, the response could have been more effective by providing a more structured approach to answering the question. For instance, it could have explicitly stated the importance of identifying a real, non-critical weakness and then describing the concrete steps taken to improve. Additionally, the response could have emphasized the need to highlight any transferable skills or strengths that relate to the weakness, which is a key aspect of the score rubric.\n\nDespite these minor gaps, the response still offers valuable advice and a structured approach to answering the question. It provides actionable advice and a clear framework, which is why it receives a score of 4. The response could have been improved by including a more explicit structure and a stronger emphasis on the importance of highlighting transferable skills or strengths. \n[RESULT] 4",
+      "auto": false
+    },
+    "7": {
+      "score": 5,
+      "pass": true,
+      "pass_ge3": true,
+      "feedback": "The response provides a comprehensive guide on how to follow up after 2 weeks of silence, covering all the necessary aspects such as timing, tone, and example wording. It suggests waiting at least 2 weeks before sending a follow-up email, which aligns with the given instruction. The tone of the email is also addressed, emphasizing politeness and professionalism. Additionally, the response includes a sample email, which is a practical example of what the follow-up email should look like. The advice on when to send the email and what to do next is also well-articulated, providing clear next steps. The response is well-structured and informative, making it a valuable resource for someone looking to follow up on a job application. Therefore, based on the score rubric, the response is comprehensive and actionable, making it a high-quality answer. \n[RESULT] 5",
+      "auto": false
+    },
+    "10": {
+      "score": 4,
+      "pass": true,
+      "pass_ge3": true,
+      "feedback": "The response provides a comprehensive strategy for explaining a 6-month employment gap, including reasons for the gap, how to explain it, and example answers. It covers a variety of potential reasons for the gap, such as career breaks, health issues, education, career transitions, and financial reasons. The response also emphasizes the importance of being honest, providing context, highlighting what was learned, and showing enthusiasm for the new role.\n\nHowever, the response does not provide a specific framing strategy or pivot to skills and goals as required by the score rubric. It also lacks example wording that the user can directly use in an interview. While the response is informative and provides a good foundation for explaining an employment gap, it does not fully meet the criteria set out in the score rubric.\n\nTherefore, the response is more aligned with a score of 4, as it includes a specific framing strategy plus partial example wording. It could be improved by providing a clearer strategy for framing the gap and including more specific example wording that the user can use in an interview. \n[RESULT] 4",
+      "auto": false
+    },
+    "12": {
+      "score": 5,
+      "pass": true,
+      "pass_ge3": true,
+      "feedback": "The response provided a comprehensive guide on how to negotiate a signing bonus, covering both the preparation phase and the actual negotiation. It included specific tips and strategies, such as researching market norms, knowing one's worth, and being flexible. The response also provided a sample script that the user could use during the negotiation, which is a clear demonstration of the negotiation language the user can actually say. The script included a clear target, a willingness to compromise, and a polite and professional tone. Additionally, the response offered advice on how to handle the negotiation if the company is unwilling to meet the target, emphasizing the importance of considering other benefits. The response was well-structured and informative, making it a valuable resource for someone looking to negotiate a signing bonus. Therefore, based on the score rubric, the response fulfills all the criteria for a score of 5. \n[RESULT] 5",
+      "auto": false
+    },
+    "13": {
+      "score": 5,
+      "pass": true,
+      "pass_ge3": true,
+      "feedback": "The response provides a comprehensive analysis of the situation, outlining both the pros and cons of mentioning a counteroffer to the current employer. It also offers specific conditions under which to share the counteroffer, such as the need for a significant improvement and the willingness to negotiate. The response also provides a clear example script, demonstrating how to approach the conversation with the manager. This approach aligns well with the score rubric, as it takes a clear position and lays out explicit pros and cons with conditions. The response does not dodge the question but instead provides a detailed and thoughtful answer, which is why it receives a score of 5. \n[RESULT] 5",
+      "auto": false
+    }
+  },
+  "Mistral": {
+    "2": {
+      "score": 5,
+      "pass": true,
+      "pass_ge3": true,
+      "feedback": "The response provided a comprehensive list of questions that are specific to a first-round marketing coordinator interview. The questions cover a wide range of topics, including marketing experience, project management, campaign execution, staying current with marketing trends, handling difficult situations, measuring campaign success, using marketing automation tools, collaborating with cross-functional teams, initiating marketing projects, and managing tight deadlines. These questions are all relevant to the role of a marketing coordinator and demonstrate a clear understanding of the position's requirements. The response effectively addresses the score rubric's criteria for a well-organized list of role-specific, plausible first-round questions. Therefore, the response is well-aligned with the score rubric's expectations for a score of 5. \n[RESULT] 5",
+      "auto": false
+    },
+    "3": {
+      "score": 5,
+      "pass": true,
+      "pass_ge3": true,
+      "feedback": "The response provides a clear framework for answering the question about one's biggest weakness. It suggests identifying a weakness that can be improved and outlines a process of addressing this weakness. The example given is specific and relatable, demonstrating the candidate's self-awareness and proactive approach to personal development. The response also includes concrete steps taken to improve the identified weakness, such as taking public speaking courses and joining a Toastmasters group. This shows a commitment to personal and professional growth, which is a positive aspect to highlight during a job interview. The response aligns well with the score rubric, as it provides a structured approach with a relevant example. Therefore, the response meets the criteria for a score of 5. \n[RESULT] 5",
+      "auto": false
+    },
+    "7": {
+      "score": 5,
+      "pass": true,
+      "pass_ge3": true,
+      "feedback": "The response provides a clear and actionable step for following up after two weeks of silence. It includes specific timing, a polite and professional tone, and a detailed example of a follow-up email. The response also suggests the inclusion of positive feedback about the company or role, which can help in keeping the application fresh in the interviewer's mind. The advice given is comprehensive and directly addresses the instruction, making it a strong response according to the score rubric. The response is well-structured and offers a complete guide on how to follow up, which is why it receives a score of 5. \n[RESULT] 5",
+      "auto": false
+    },
+    "10": {
+      "score": 3,
+      "pass": false,
+      "pass_ge3": true,
+      "feedback": "The response provides a general strategy for explaining a 6-month employment gap, including being honest, focusing on the positive, highlighting transferable skills, keeping the explanation brief, showing enthusiasm, and avoiding sounding defensive. However, it lacks specific example wording that the user can directly apply in an interview setting. The response does not provide a clear, actionable strategy that the user can follow to frame their explanation of the employment gap. It also does not offer any concrete examples of how to phrase the explanation, which would have been helpful for the user to understand how to implement the advice given. Therefore, while the response does offer some useful advice, it falls short of providing a specific strategy with example wording, which is what the score rubric requires for a higher score. So the overall score is 3. [RESULT] 3",
+      "auto": false
+    },
+    "12": {
+      "score": 4,
+      "pass": true,
+      "pass_ge3": true,
+      "feedback": "The response provides a comprehensive list of tips for negotiating a signing bonus, which aligns with the instruction given. It covers research, preparation, specificity, value, flexibility, and follow-up, all of which are crucial elements in a negotiation. However, it falls short in providing specific negotiation language or a sample script that the user can actually say. This is a key aspect of the score rubric, which requires the inclusion of specific negotiation language or a sample script. The response, while informative, does not offer the user a tangible tool to use in the negotiation process. Therefore, it does not meet the highest standard set by the score rubric. So the overall score is 4. [RESULT] 4",
+      "auto": false
+    },
+    "13": {
+      "score": 4,
+      "pass": true,
+      "pass_ge3": true,
+      "feedback": "The response provided a comprehensive analysis of the situation, considering various factors such as timing, honesty, professionalism, confidentiality, and career goals. It did not take a definitive position but instead offered a balanced view, acknowledging that the decision to mention a counteroffer is a personal one that depends on the individual's circumstances. The response also emphasized the importance of maintaining professionalism and respecting confidentiality, which are crucial aspects of the situation. However, it lacked explicit pros and cons, which would have made the advice more actionable. The response did not dodge the question but instead provided a nuanced perspective that could help the individual make an informed decision. Therefore, based on the score rubric, the response is more aligned with a score of 4, as it presents clear trade-offs and a leaning position with minor gaps. \n[RESULT] 4",
+      "auto": false
+    }
+  },
+  "_meta": {
+    "judge": "hf.co/prometheus-eval/prometheus-7b-v2.0-GGUF:Q4_K_M",
+    "pass_min": 4,
+    "template": "prometheus-eval absolute grading"
+  },
+  "Rasa": {
+    "2": {
+      "score": 1,
+      "pass": false,
+      "pass_ge3": false,
+      "feedback": "The response provided does not meet the criteria set out in the score rubric. It fails to provide any specific interview questions that would be relevant to a first-round marketing coordinator interview. Instead, it offers a generic and non-informative statement, which does not contribute to the understanding of what questions to expect in such an interview. This lack of specificity and relevance to the marketing coordinator role is why the response does not meet the requirements of the score rubric. Therefore, the response is not helpful and does not provide any value to the individual seeking to understand what questions to expect in a first-round marketing coordinator interview. \n[RESULT] 1",
+      "auto": false
+    },
+    "3": {
+      "score": 1,
+      "pass": false,
+      "pass_ge3": false,
+      "feedback": "The response provided does not offer any actionable advice or a framework for answering the question 'What's your biggest weakness?'. It is off-topic and does not address the question at all. The response does not provide any guidance on how to approach the question, nor does it offer any concrete examples or steps for improvement. Therefore, it does not meet the criteria set out in the score rubric. \n[RESULT] 1",
+      "auto": false
+    },
+    "7": {
+      "score": 1,
+      "pass": false,
+      "pass_ge3": false,
+      "feedback": "The response provided does not offer any actionable steps for following up after 2 weeks of silence. It lacks any guidance on timing, tone, or example wording, which are crucial elements for effective communication. The response is off-topic and does not address the question asked. Therefore, it does not meet the criteria set out in the score rubric. \n[RESULT] 1",
+      "auto": false
+    },
+    "10": {
+      "score": 1,
+      "pass": false,
+      "pass_ge3": false,
+      "feedback": "The response provided does not offer any specific strategy or example wording for explaining a 6-month employment gap. It lacks any actionable advice or guidance that could be used in an interview setting. The response is off-topic and does not address the question asked. It does not provide any insight into how to frame the gap, nor does it suggest any way to pivot the conversation towards skills or goals. Therefore, it does not meet the criteria set out in the score rubric. \n[RESULT] 1",
+      "auto": false
+    },
+    "12": {
+      "score": 1,
+      "pass": false,
+      "pass_ge3": false,
+      "feedback": "The response provided does not offer any specific negotiation language or a sample script that the user can utilize. It merely states the bot's identity and does not contribute to the user's request for assistance in negotiating a signing bonus. The response is off-topic and does not provide any actionable advice or guidance for the user's situation. Therefore, it does not meet the criteria set out in the score rubric. \n[RESULT] 1",
+      "auto": false
+    },
+    "13": {
+      "score": 1,
+      "pass": false,
+      "pass_ge3": false,
+      "feedback": "The response provided does not take a position or lay out clear trade-offs about mentioning a counteroffer. It is a non-answer that does not engage with the question at all. The response does not provide any guidance or considerations that could help the individual make an informed decision. It fails to meet the criteria set out in the score rubric, which requires a clear position or explicit pros and cons with conditions. Therefore, the response does not meet the standards of the score rubric and is not helpful in the context of the question. \n[RESULT] 1",
+      "auto": false
+    }
+  }
+}
