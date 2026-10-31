@@ -359,20 +359,3 @@ os.environ['LOGS_DIR'] = '/content/drive/MyDrive/chatbot_usability/logs_v3'
 
 ---
 
-## 👨‍💻 Team
-
-| Member | Owns |
-|--------|------|
-| A | `orchestrator.py`, `adapters/`, `logger.py` |
-| B | `metrics/` (all 5 modules), `mattr_calculator.py`, `prometheus_judge.py`, `kappa_calculator.py` |
-| C | `task_bank/`, `sus_study.py`, `analysis.py`, report generation |
-
----
-
-## 📄 License
-
-This project is for academic purposes as part of a B.Tech Final Year Project.
-
----
-
-<p align="center">Made with ❤️ as a B.Tech Final Year Project</p>
