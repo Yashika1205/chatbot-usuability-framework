@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.env
+.venv
+
+# Debug / output text files
+*.txt
+diag_out.txt
+extracted_doc.txt
+pipeline_check_out.txt
+workbook_compare_out.txt
+workbook_out.txt
+final_check_out.txt
+
+# Zip archives (keep source, not archives)
+*.zip
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Results / logs (generated at runtime)
+results/logs/
+results/sus_data/
+results/reports/
+
+# IDE
+.vscode/
+.idea/
