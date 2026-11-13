@@ -1,17 +1,17 @@
 # 🤖 Chatbot Usability Testing Framework
 
-> **B.Tech Final Year Project** — The first fully automated, multi-dimensional chatbot usability testing framework. Scores chatbots on five objective metrics from conversation logs alone — no human raters needed.
+> **B.Tech Final Year Project** — An automated, multi-dimensional chatbot usability testing framework. Scores chatbots on five objective metrics from conversation logs, then checks the result against a human SUS study.
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Research%20Complete-brightgreen?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Research%20Prototype-yellow?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Google%20Colab-lightgrey?style=flat-square)
 
 ---
 
 ## 📌 What is this?
 
-This framework automatically evaluates chatbot usability across **5 objective dimensions** — without any human raters. It supports both **rule-based chatbots (Rasa)** and **LLM-backed chatbots (Ollama)**, and validates automated scores against a **human SUS study (n ≥ 30)**.
+This framework automatically evaluates chatbot usability across **5 objective dimensions** — without any human raters. It supports both **rule-based chatbots (Rasa)** and **LLM-backed chatbots (Ollama)**, and compares automated scores against a **human SUS study** (61 responses: 31 for Llama 3.1, 30 for Mistral; Rasa was not tested by humans). See [Results](#-results) and `human_study/`.
 
 ---
 
@@ -20,7 +20,7 @@ This framework automatically evaluates chatbot usability across **5 objective di
 - ✅ **Fully Automated** — Zero human raters needed to produce a CUS (Chatbot Usability Score)
 - 📊 **5 Usability Dimensions** — Context Retention, Response Time, Helpfulness, Lexical Diversity, Error Rate
 - 🧠 **LLM-as-Judge** — Uses Prometheus 2 (Kim et al., EMNLP 2024) for helpfulness evaluation
-- 🔬 **Human Validation** — CUS correlated against SUS (n ≥ 30) via Pearson r, Spearman ρ, OLS regression
+- 🔬 **Human Comparison** — CUS compared with mean SUS per chatbot (rank comparison, Welch t-test as supporting detail; a correlation needs more than two chatbots)
 - 🧪 **Mock Mode** — Run full pipeline offline without any live chatbot
 - 📈 **Reproducible** — 3-run protocol with mean ± SD reporting
 
@@ -57,7 +57,7 @@ This framework automatically evaluates chatbot usability across **5 objective di
                       │
           ┌───────────▼──────────┐
           │     analysis.py      │
-          │  (Pearson r, OLS)    │
+          │  (rank comparison)    │
           └───────────┬──────────┘
                       │
           ┌───────────▼──────────┐
@@ -108,24 +108,24 @@ Input: Chatbot Endpoint (Rasa / Ollama)
          │
          ▼
  ┌───────────────┐
- │  Prometheus 2 │  ← LLM-as-judge for helpfulness (5 turns)
+ │  Prometheus 2 │  ← LLM-as-judge for helpfulness (6 turns: 2, 3, 7, 10, 12, 13)
  │  Judge        │
  └───────┬───────┘
          │
          ▼
  ┌───────────────┐
- │  CUS Scoring  │  ← Equal-weighted + Regression-weighted
+ │  CUS Scoring  │  ← Equal-weighted CUS
  └───────┬───────┘
          │
          ▼
  ┌───────────────┐
- │  SUS Study    │  ← Human perception (n ≥ 30)
- │  (n ≥ 30)     │
+ │  SUS Study    │  ← Human perception
+ │ (Llama, Mistral)│
  └───────┬───────┘
          │
          ▼
  ┌───────────────┐
- │  Correlation  │  ← Pearson r, Spearman ρ, OLS Regression
+ │  Correlation  │  ← Rank comparison, Welch t-test
  │  Analysis     │
  └───────┬───────┘
          │
@@ -146,7 +146,7 @@ chatbot_usability_framework/
 ├── 📄 orchestrator.py          ← Test orchestrator
 ├── 📄 logger.py                ← Conversation logger (JSONL)
 ├── 📄 scoring.py               ← CUS engine (equal + regression weighted)
-├── 📄 analysis.py              ← Pearson r, Spearman ρ, OLS regression
+├── 📄 analysis.py              ← rank comparison, Welch t-test
 ├── 📄 report.py                ← Human-readable report generator
 ├── 📄 sus_study.py             ← SUS data collector + calculator
 ├── 📄 requirements.txt
@@ -172,6 +172,8 @@ chatbot_usability_framework/
 │   ├── hr_script.csv           ← Helpfulness script
 │   ├── mattr_script.csv        ← Lexical Diversity script
 │   └── er_script.csv           ← Error Rate script
+│
+├── 📂 human_study/            ← Human SUS study: report sections, responses, scoring sheet
 │
 └── 📂 results/
     ├── logs/                   ← JSONL conversation logs
@@ -264,31 +266,36 @@ Enter 3 known-good and 3 known-padded responses when prompted. Thresholds are sa
 
 ---
 
-## 👥 Human SUS Study
+## 📊 Results
 
-Collect participant responses interactively:
-```bash
-py main.py --mode sus --chatbot rasa
-py main.py --mode sus --chatbot ollama
-```
+Latest team run (26 Oct, 3 runs, mean) and the human SUS study:
 
-Or import from CSV:
-```python
-from sus_study import load_sus_from_csv, aggregate_sus
-records = load_sus_from_csv("my_data.csv")
-# CSV columns: participant_id, chatbot_name, q1–q10
-```
+| Chatbot | CUS (automated, 0–100) | Mean SUS (human, 0–100) | SUS responses |
+|---|---|---|---|
+| Llama 3.1 8B | 59.64 | 71.0 | 31 |
+| Mistral 7B | 51.54 | 70.9 | 30 |
+| Rasa | about 24.5 (4 of 5 metrics; MATTR missing) | not tested by humans | n/a |
+
+- Humans rated Llama and Mistral the same (Welch p = 0.98), both just above the common SUS benchmark of 68. The automated 8-point CUS gap is therefore **not confirmed** by testers.
+- With only two chatbots in the human study, a correlation between CUS and SUS cannot be computed. We report a rank comparison only.
+- Rasa ran locally and could not be offered to testers, so it is excluded from the human study.
+- The Prometheus judge is **not yet validated** against human ratings (Cohen's kappa = 0.0 on 3 turns), so helpfulness scores should be treated as provisional.
 
 ---
 
-## 📈 Correlation & Regression Analysis
+## 👥 Human SUS Study
 
-After the SUS study is complete:
-```bash
-py main.py --mode analysis
-```
+Run by Member C. Testers opened a walkthrough page, sent six scripted messages to each chatbot (served from Google Colab), then filled a Google Form with the 10 SUS items. Scoring: odd items answer − 1, even items 5 − answer, sum × 2.5.
 
-Outputs: Pearson r, Spearman ρ, regression weights → saved to `results/analysis_results.json`
+Everything is in [`human_study/`](human_study/): report sections (PDF), cleaned responses (CSV), scoring sheet (XLSX), walkthrough page and Colab notebook. See that folder's README.
+
+`sus_study.py` is a command-line collector (`py main.py --mode sus --chatbot ollama`) that was **not** used for the final study.
+
+---
+
+## 📈 Comparison Analysis
+
+The final comparison is done in `human_study/SUS_Scoring_Analysis_Sheet_FINAL.xlsx` (mean SUS per chatbot, rank comparison with CUS, Welch t-test). `py main.py --mode analysis` runs Pearson, Spearman and OLS, which are only meaningful with many more chatbots than the two tested here.
 
 ---
 
@@ -301,7 +308,7 @@ Outputs: Pearson r, Spearman ρ, regression weights → saved to `results/analys
 | `RASA_URL` | `http://localhost:5005` | Rasa server endpoint |
 | `OLLAMA_URL` | `http://localhost:11434` | Ollama server endpoint |
 | `OLLAMA_MODEL` | `llama3.1:8b` | Ollama model name |
-| `PROMETHEUS_MODEL` | `llama3.1:8b` | Judge model |
+| `PROMETHEUS_MODEL` | `llama3.1:8b` | Judge model (final runs used `hf.co/prometheus-eval/prometheus-7b-v2.0-GGUF:Q4_K_M`) |
 | `RASA_MOCK` | `0` | Enable Rasa mock mode |
 | `OLLAMA_MOCK` | `0` | Enable Ollama mock mode |
 | `PROMETHEUS_MOCK` | `0` | Enable Prometheus mock mode |
@@ -358,4 +365,3 @@ os.environ['LOGS_DIR'] = '/content/drive/MyDrive/chatbot_usability/logs_v3'
 | Higashinaka et al. (2015) | Error taxonomy |
 
 ---
-
