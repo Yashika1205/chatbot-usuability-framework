@@ -1,4 +1,4 @@
-# 🤖 Chatbot Usability Testing Framework
+# Chatbot Usability Testing Framework
 
 > **B.Tech Final Year Project** — An automated, multi-dimensional chatbot usability testing framework. Scores chatbots on five objective metrics from conversation logs, then checks the result against a human SUS study.
 
@@ -9,24 +9,24 @@
 
 ---
 
-## 📌 What is this?
+## What is this?
 
 This framework automatically evaluates chatbot usability across **5 objective dimensions** — without any human raters. It supports both **rule-based chatbots (Rasa)** and **LLM-backed chatbots (Ollama)**, and compares automated scores against a **human SUS study** (61 responses: 31 for Llama 3.1, 30 for Mistral; Rasa was not tested by humans). See [Results](#-results) and `human_study/`.
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- ✅ **Fully Automated** — Zero human raters needed to produce a CUS (Chatbot Usability Score)
-- 📊 **5 Usability Dimensions** — Context Retention, Response Time, Helpfulness, Lexical Diversity, Error Rate
-- 🧠 **LLM-as-Judge** — Uses Prometheus 2 (Kim et al., EMNLP 2024) for helpfulness evaluation
-- 🔬 **Human Comparison** — CUS compared with mean SUS per chatbot (rank comparison, Welch t-test as supporting detail; a correlation needs more than two chatbots)
-- 🧪 **Mock Mode** — Run full pipeline offline without any live chatbot
-- 📈 **Reproducible** — 3-run protocol with mean ± SD reporting
+-  **Fully Automated** — Zero human raters needed to produce a CUS (Chatbot Usability Score)
+-  **5 Usability Dimensions** — Context Retention, Response Time, Helpfulness, Lexical Diversity, Error Rate
+-  **LLM-as-Judge** — Uses Prometheus 2 (Kim et al., EMNLP 2024) for helpfulness evaluation
+-  **Human Comparison** — CUS compared with mean SUS per chatbot (rank comparison, Welch t-test as supporting detail; a correlation needs more than two chatbots)
+-  **Mock Mode** — Run full pipeline offline without any live chatbot
+-  **Reproducible** — 3-run protocol with mean ± SD reporting
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -69,7 +69,7 @@ This framework automatically evaluates chatbot usability across **5 objective di
 
 ---
 
-## 📐 Five Usability Metrics
+##  Five Usability Metrics
 
 | # | Metric | Script Turns | ISO Dimension | Pass Threshold |
 |---|--------|-------------|---------------|----------------|
@@ -83,7 +83,7 @@ This framework automatically evaluates chatbot usability across **5 objective di
 
 ---
 
-## 🔄 Pipeline Workflow
+##  Pipeline Workflow
 
 ```
 Input: Chatbot Endpoint (Rasa / Ollama)
@@ -137,7 +137,7 @@ Input: Chatbot Endpoint (Rasa / Ollama)
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 chatbot_usability_framework/
@@ -183,7 +183,7 @@ chatbot_usability_framework/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone the repository
 ```bash
@@ -214,7 +214,7 @@ py main.py --mode full --mock
 
 ---
 
-## 🤖 Running with Live Chatbots
+##  Running with Live Chatbots
 
 ### Ollama (LLM-backed)
 ```bash
@@ -242,7 +242,7 @@ py main.py --mode script --chatbot ollama --script error_rate
 
 ---
 
-## 📊 All Run Modes
+##  All Run Modes
 
 | Mode | Command | Description |
 |------|---------|-------------|
@@ -256,7 +256,7 @@ py main.py --mode script --chatbot ollama --script error_rate
 
 ---
 
-## 🧪 MATTR-50 Calibration
+##  MATTR-50 Calibration
 
 Run once before the main test:
 ```bash
@@ -266,7 +266,7 @@ Enter 3 known-good and 3 known-padded responses when prompted. Thresholds are sa
 
 ---
 
-## 📊 Results
+##  Results
 
 Latest team run (26 Oct, 3 runs, mean) and the human SUS study:
 
@@ -283,7 +283,7 @@ Latest team run (26 Oct, 3 runs, mean) and the human SUS study:
 
 ---
 
-## 👥 Human SUS Study
+##  Human SUS Study
 
 Run by Member C. Testers opened a walkthrough page, sent six scripted messages to each chatbot (served from Google Colab), then filled a Google Form with the 10 SUS items. Scoring: odd items answer − 1, even items 5 − answer, sum × 2.5.
 
@@ -293,13 +293,13 @@ Everything is in [`human_study/`](human_study/): report sections (PDF), cleaned 
 
 ---
 
-## 📈 Comparison Analysis
+##  Comparison Analysis
 
 The final comparison is done in `human_study/SUS_Scoring_Analysis_Sheet_FINAL.xlsx` (mean SUS per chatbot, rank comparison with CUS, Welch t-test). `py main.py --mode analysis` runs Pearson, Spearman and OLS, which are only meaningful with many more chatbots than the two tested here.
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Environment Variables
 
@@ -323,7 +323,7 @@ or use `--mock` flag.
 
 ---
 
-## 🔬 Google Colab (T4 GPU) Workflow
+##  Google Colab (T4 GPU) Workflow
 
 For running on Colab with GPU acceleration:
 
@@ -350,7 +350,7 @@ os.environ['LOGS_DIR'] = '/content/drive/MyDrive/chatbot_usability/logs_v3'
 
 ---
 
-## 📚 Academic References
+##  Academic References
 
 | Reference | Used For |
 |-----------|----------|
