@@ -1,0 +1,13 @@
+run,script,bot,turn_number,question,response,latency_ms,mattr,timestamp,environment,question_type,row_index,history_msgs,history_gap,est_prompt_tokens,ctx_risk,eval_count,prompt_eval_count,done_reason,load_ms,gen_ms
+2,MATTR,Rasa,1,Is a Roth IRA taxed on withdrawal?,"I am a bot, powered by Rasa.",234.97,,2026-10-09T12:57:30.350386,Google_Colab_T4,yes_no,0,0,0,0,False,,,,0.0,0.0
+2,MATTR,Rasa,2,Explain how compound interest works.,"Great, carry on!",173.69,,2026-10-09T12:57:31.524880,Google_Colab_T4,explanation,1,0,0,0,False,,,,0.0,0.0
+2,MATTR,Rasa,3,How do I set up a monthly budget from scratch?,Here is something to cheer you up: Did that help you?,173.84,,2026-10-09T12:57:32.699543,Google_Colab_T4,step_by_step,2,0,0,0,False,,,,0.0,0.0
+2,MATTR,Rasa,4,Is it better to pay off debt or invest first?,"Great, carry on!",146.59,,2026-10-09T12:57:33.847096,Google_Colab_T4,opinion,3,0,0,0,False,,,,0.0,0.0
+2,MATTR,Rasa,5,What does the term APR stand for?,"I am a bot, powered by Rasa.",151.9,,2026-10-09T12:57:34.999767,Google_Colab_T4,short_factual,4,0,0,0,False,,,,0.0,0.0
+2,MATTR,Rasa,6,Do I need good credit to open a savings account?,"Great, carry on!",179.44,,2026-10-09T12:57:36.180141,Google_Colab_T4,yes_no,5,0,0,0,False,,,,0.0,0.0
+2,MATTR,Rasa,7,Explain the difference between a credit union and a bank.,"I am a bot, powered by Rasa.",166.95,,2026-10-09T12:57:37.347905,Google_Colab_T4,explanation,6,0,0,0,False,,,,0.0,0.0
+2,MATTR,Rasa,8,How do I build an emergency fund?,"Great, carry on!",311.55,,2026-10-09T12:57:38.660290,Google_Colab_T4,step_by_step,7,0,0,0,False,,,,0.0,0.0
+2,MATTR,Rasa,9,Should a beginner investor buy individual stocks or index funds?,"Great, carry on!",322.09,,2026-10-09T12:57:39.983237,Google_Colab_T4,opinion,8,0,0,0,False,,,,0.0,0.0
+2,MATTR,Rasa,10,"What does APR stand for, one more time — quickly?","I am a bot, powered by Rasa.",153.61,,2026-10-09T12:57:41.137740,Google_Colab_T4,repeated,9,0,0,0,False,,,,0.0,0.0
+2,MATTR,Rasa,11,Explain what a credit score actually measures.,"I am a bot, powered by Rasa.",157.08,,2026-10-09T12:57:42.295654,Google_Colab_T4,explanation,10,0,0,0,False,,,,0.0,0.0
+2,MATTR,Rasa,12,How do I dispute an error on my credit report?,Here is something to cheer you up: Did that help you?,220.42,,2026-10-09T12:57:43.517034,Google_Colab_T4,step_by_step,11,0,0,0,False,,,,0.0,0.0

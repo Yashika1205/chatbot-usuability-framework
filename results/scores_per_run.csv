@@ -1,0 +1,10 @@
+run,bot,CR,RT_ms,HR,HR_status,MATTR,ER_pct,CUS,CUS_complete,CUS_missing
+1,Rasa,0.0,84.5,0.0,OK,,100.0,24.79,False,MATTR
+1,Llama3,33.3,17730.0,100.0,OK,0.7415,6.7,60.15,True,
+1,Mistral,16.7,12186.7,86.7,OK,0.7562,13.3,53.14,True,
+2,Rasa,0.0,192.6,0.0,OK,,100.0,24.52,False,MATTR
+2,Llama3,33.3,18320.8,100.0,OK,0.7278,6.7,59.88,True,
+2,Mistral,0.0,10772.0,93.3,OK,0.7675,20.0,50.01,True,
+3,Rasa,0.0,289.4,0.0,OK,,100.0,24.28,False,MATTR
+3,Llama3,33.3,16629.3,100.0,OK,0.7448,13.3,58.9,True,
+3,Mistral,16.7,8149.6,73.3,OK,0.7558,26.7,51.48,True,

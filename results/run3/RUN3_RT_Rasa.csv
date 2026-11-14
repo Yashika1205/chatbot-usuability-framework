@@ -1,0 +1,20 @@
+run,script,bot,turn_number,question,response,latency_ms,mattr,timestamp,environment,turn_type,row_index,history_msgs,history_gap,est_prompt_tokens,ctx_risk,eval_count,prompt_eval_count,done_reason,load_ms,gen_ms
+3,RT,Rasa,1,What's a smart plug?,"I am a bot, powered by Rasa.",209.69,,2026-10-09T13:29:22.269286,Google_Colab_T4,short_factual,0,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,2,Do smart bulbs work without a hub?,"I am a bot, powered by Rasa.",195.08,,2026-10-09T13:29:23.465329,Google_Colab_T4,short_factual,1,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,3,"I'm setting up a smart home in a 2-bedroom apartment with a budget of around $300 — can you suggest a starter kit covering lights, plugs, and a hub, along with rough pricing for each?","I am a bot, powered by Rasa.",209.31,,2026-10-09T13:29:24.675517,Google_Colab_T4,long_multiclause,2,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,4,What's the difference between Zigbee and Wi-Fi smart devices?,"Great, carry on!",433.26,,2026-10-09T13:29:26.109801,Google_Colab_T4,short_factual,3,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,5,"If I already have 4 smart bulbs on one hub and want to add 6 more from a different brand, will they work together or do I need a second hub?","I am a bot, powered by Rasa.",358.87,,2026-10-09T13:29:27.469590,Google_Colab_T4,reasoning,4,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,6,hey,Hey! How are you?,195.9,,2026-10-09T13:29:28.666452,Google_Colab_T4,rapid_burst_1,5,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,6,quick q,Bye,197.18,,2026-10-09T13:29:29.864381,Google_Colab_T4,rapid_burst_2,6,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,6,are smart locks safe?,"I am a bot, powered by Rasa.",201.26,,2026-10-09T13:29:31.066488,Google_Colab_T4,rapid_burst_3,7,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,7,"I want to automate my morning routine — lights turning on gradually, coffee maker starting, and blinds opening — can you walk me through how to set that up with an example automation rule?","I am a bot, powered by Rasa.",220.93,,2026-10-09T13:29:32.288394,Google_Colab_T4,long_multiclause,8,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,8,Can Alexa and Google Home be used together?,"I am a bot, powered by Rasa.",200.31,,2026-10-09T13:29:33.489531,Google_Colab_T4,short_factual,9,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,9,What does your product page say about the smart lock's battery life?,"I am a bot, powered by Rasa.",201.28,,2026-10-09T13:29:34.691775,Google_Colab_T4,retrieval,10,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,10,I have 15 devices total across 3 rooms — how should I organize them into groups for easier control?,"I am a bot, powered by Rasa.",203.73,,2026-10-09T13:29:35.896407,Google_Colab_T4,reasoning,11,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,11,Is there a free app for controlling multiple smart brands?,"I am a bot, powered by Rasa.",205.28,,2026-10-09T13:29:37.102573,Google_Colab_T4,short_factual,12,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,12,"I'm worried about privacy — can you explain what data smart home devices typically collect, how it's usually stored, and what settings I should check to limit sharing?","I am a bot, powered by Rasa.",218.5,,2026-10-09T13:29:38.321973,Google_Colab_T4,long_multiclause,13,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,13,one more thing,Hey! How are you?,445.1,,2026-10-09T13:29:39.768004,Google_Colab_T4,rapid_burst_1,14,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,13,does this work offline,"Great, carry on!",434.35,,2026-10-09T13:29:41.203267,Google_Colab_T4,rapid_burst_2,15,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,13,and what about power cuts,Here is something to cheer you up: Did that help you?,244.62,,2026-10-09T13:29:42.448769,Google_Colab_T4,rapid_burst_3,16,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,14,"If my Wi-Fi goes down, will my existing automations still run?",Here is something to cheer you up: Did that help you?,301.79,,2026-10-09T13:29:43.751418,Google_Colab_T4,reasoning,17,0,0,0,False,,,,0.0,0.0
+3,RT,Rasa,15,What's a mesh Wi-Fi system?,"Great, carry on!",602.79,,2026-10-09T13:29:45.355013,Google_Colab_T4,short_factual,18,0,0,0,False,,,,0.0,0.0

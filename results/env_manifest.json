@@ -1,0 +1,196 @@
+[
+  {
+    "created": "2026-10-26T12:26:04.935278",
+    "python": "3.13.16",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "pandas": "2.2.3",
+    "num_ctx": 32768,
+    "num_predict": null,
+    "temperature": 0.7,
+    "seed_rule": "run*1000 + row_index",
+    "history_policy": {
+      "CR": "full",
+      "RT": "full",
+      "HR": "full",
+      "MATTR": "full",
+      "ER": "per_case"
+    },
+    "scripts_sha256_16": {
+      "CR": "b53d3345c05494af",
+      "RT": "b65af745a9f30eff",
+      "HR": "52aa11c8e1e2b3b5",
+      "MATTR": "5fc54e3b7d61efad",
+      "ER": "9ff25fb748d657f9"
+    },
+    "ollama_error": "HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/version (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7a55f84a3230>: Failed to establish a new connection: [Errno 111] Connection refused'))",
+    "gpu": "Tesla T4, 15360 MiB"
+  },
+  {
+    "created": "2026-10-26T12:36:34.028274",
+    "python": "3.13.16",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "pandas": "2.2.3",
+    "num_ctx": 32768,
+    "num_predict": null,
+    "temperature": 0.7,
+    "seed_rule": "run*1000 + row_index",
+    "history_policy": {
+      "CR": "full",
+      "RT": "full",
+      "HR": "full",
+      "MATTR": "full",
+      "ER": "per_case"
+    },
+    "scripts_sha256_16": {
+      "CR": "b53d3345c05494af",
+      "RT": "b65af745a9f30eff",
+      "HR": "52aa11c8e1e2b3b5",
+      "MATTR": "5fc54e3b7d61efad",
+      "ER": "9ff25fb748d657f9"
+    },
+    "ollama_error": "HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/version (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x78ab0ef0f230>: Failed to establish a new connection: [Errno 111] Connection refused'))",
+    "gpu": "Tesla T4, 15360 MiB"
+  },
+  {
+    "created": "2026-10-26T12:37:28.105739",
+    "python": "3.13.16",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "pandas": "2.2.3",
+    "num_ctx": 32768,
+    "num_predict": null,
+    "temperature": 0.7,
+    "seed_rule": "run*1000 + row_index",
+    "history_policy": {
+      "CR": "full",
+      "RT": "full",
+      "HR": "full",
+      "MATTR": "full",
+      "ER": "per_case"
+    },
+    "scripts_sha256_16": {
+      "CR": "b53d3345c05494af",
+      "RT": "b65af745a9f30eff",
+      "HR": "52aa11c8e1e2b3b5",
+      "MATTR": "5fc54e3b7d61efad",
+      "ER": "9ff25fb748d657f9"
+    },
+    "ollama_error": "HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/version (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7d645633b230>: Failed to establish a new connection: [Errno 111] Connection refused'))",
+    "gpu": "Tesla T4, 15360 MiB"
+  },
+  {
+    "created": "2026-10-26T13:15:46.386108",
+    "python": "3.13.16",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "pandas": "2.2.3",
+    "num_ctx": 32768,
+    "num_predict": null,
+    "temperature": 0.7,
+    "seed_rule": "run*1000 + row_index",
+    "history_policy": {
+      "CR": "full",
+      "RT": "full",
+      "HR": "full",
+      "MATTR": "full",
+      "ER": "per_case"
+    },
+    "scripts_sha256_16": {
+      "CR": "b53d3345c05494af",
+      "RT": "b65af745a9f30eff",
+      "HR": "52aa11c8e1e2b3b5",
+      "MATTR": "5fc54e3b7d61efad",
+      "ER": "9ff25fb748d657f9"
+    },
+    "ollama_version": {
+      "version": "0.40.11"
+    },
+    "ollama_models": {
+      "mistral:latest": "6577803aa9a03636",
+      "llama3.1:latest": "46e0c10c039e0191"
+    },
+    "gpu": "Tesla T4, 15360 MiB"
+  },
+  {
+    "created": "2026-10-27T06:41:15.324068",
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "pandas": "2.2.3",
+    "num_ctx": 32768,
+    "num_predict": null,
+    "temperature": 0.7,
+    "seed_rule": "run*1000 + row_index",
+    "history_policy": {
+      "CR": "full",
+      "RT": "full",
+      "HR": "full",
+      "MATTR": "full",
+      "ER": "per_case"
+    },
+    "scripts_sha256_16": {
+      "CR": "b53d3345c05494af",
+      "RT": "b65af745a9f30eff",
+      "HR": "52aa11c8e1e2b3b5",
+      "MATTR": "5fc54e3b7d61efad",
+      "ER": "9ff25fb748d657f9"
+    },
+    "ollama_version": {
+      "version": "0.40.11"
+    },
+    "ollama_models": {
+      "mistral:latest": "6577803aa9a03636",
+      "llama3.1:latest": "46e0c10c039e0191"
+    },
+    "gpu": "Tesla T4, 15360 MiB"
+  },
+  {
+    "created": "2026-10-27T13:18:21.064457",
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "pandas": "2.2.3",
+    "num_ctx": 32768,
+    "num_predict": null,
+    "temperature": 0.7,
+    "seed_rule": "run*1000 + row_index",
+    "history_policy": {
+      "CR": "full",
+      "RT": "full",
+      "HR": "full",
+      "MATTR": "full",
+      "ER": "per_case"
+    },
+    "scripts_sha256_16": {
+      "CR": "b53d3345c05494af",
+      "RT": "b65af745a9f30eff",
+      "HR": "52aa11c8e1e2b3b5",
+      "MATTR": "5fc54e3b7d61efad",
+      "ER": "9ff25fb748d657f9"
+    },
+    "ollama_error": "HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/version (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7d5147e83230>: Failed to establish a new connection: [Errno 111] Connection refused'))",
+    "gpu": "Tesla T4, 15360 MiB"
+  },
+  {
+    "created": "2026-10-27T13:19:07.584200",
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "pandas": "2.2.3",
+    "num_ctx": 32768,
+    "num_predict": null,
+    "temperature": 0.7,
+    "seed_rule": "run*1000 + row_index",
+    "history_policy": {
+      "CR": "full",
+      "RT": "full",
+      "HR": "full",
+      "MATTR": "full",
+      "ER": "per_case"
+    },
+    "scripts_sha256_16": {
+      "CR": "b53d3345c05494af",
+      "RT": "b65af745a9f30eff",
+      "HR": "52aa11c8e1e2b3b5",
+      "MATTR": "5fc54e3b7d61efad",
+      "ER": "9ff25fb748d657f9"
+    },
+    "ollama_error": "HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/version (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7b8cc74b7230>: Failed to establish a new connection: [Errno 111] Connection refused'))",
+    "gpu": "Tesla T4, 15360 MiB"
+  }
+]

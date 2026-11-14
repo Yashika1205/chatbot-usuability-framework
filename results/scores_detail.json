@@ -1,0 +1,2619 @@
+{
+  "run1_Rasa": {
+    "scores": {
+      "CR": {
+        "score": 0.0,
+        "passed": 0,
+        "total": 6,
+        "invalid": 0,
+        "details": [
+          {
+            "turn": 5,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          },
+          {
+            "turn": 10,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          },
+          {
+            "turn": 15,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          },
+          {
+            "turn": 20,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          },
+          {
+            "turn": 25,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          },
+          {
+            "turn": 30,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          }
+        ]
+      },
+      "RT": {
+        "mean_ms": 84.5,
+        "median_ms": 79.6,
+        "sd_ms": 39.4,
+        "p95_ms": 162.5,
+        "n": 94,
+        "errors": 0,
+        "score": 84.5,
+        "turns_with_model_load": 0,
+        "burst_vs_normal_pct": -26.2,
+        "band": "GOOD"
+      },
+      "MATTR": {
+        "score": null,
+        "scored": 0,
+        "excluded": 94
+      },
+      "HR": {
+        "score": 0.0,
+        "passed": 0,
+        "total": 15,
+        "details": [
+          {
+            "turn": 1,
+            "pass": false,
+            "method": "rule",
+            "reason": "no rewritten bullet with action verb AND measurable outcome"
+          },
+          {
+            "turn": 2,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 3,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 4,
+            "pass": false,
+            "method": "rule",
+            "reason": "greeting=False closing=False"
+          },
+          {
+            "turn": 5,
+            "pass": false,
+            "method": "rule",
+            "reason": "no figure or named resource"
+          },
+          {
+            "turn": 6,
+            "pass": false,
+            "method": "rule",
+            "reason": "no more-specific rewrite found"
+          },
+          {
+            "turn": 7,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 8,
+            "pass": false,
+            "method": "rule",
+            "reason": "no verifiable certification named"
+          },
+          {
+            "turn": 9,
+            "pass": false,
+            "method": "rule",
+            "reason": "0 placeholders"
+          },
+          {
+            "turn": 10,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 11,
+            "pass": false,
+            "method": "rule",
+            "reason": "categories: []"
+          },
+          {
+            "turn": 12,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 13,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 14,
+            "pass": false,
+            "method": "rule",
+            "reason": "no quoted/bold headline"
+          },
+          {
+            "turn": 15,
+            "pass": false,
+            "method": "rule",
+            "reason": "missing ['leadership', 'conversion', 'budget']"
+          }
+        ],
+        "band": "POOR"
+      },
+      "ER": {
+        "score": 100.0,
+        "failed": 15,
+        "total": 15,
+        "hard": 15,
+        "by_noise_failed": {
+          "typo": 3,
+          "ambiguous": 3,
+          "out_of_scope": 2,
+          "contradiction": 3,
+          "incomplete": 2,
+          "nonsense": 1,
+          "nonsense_prefix": 1
+        },
+        "details": [
+          {
+            "turn": 1,
+            "noise": "typo",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 2,
+            "noise": "ambiguous",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 3,
+            "noise": "out_of_scope",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 4,
+            "noise": "contradiction_t2",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 5,
+            "noise": "incomplete",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 6,
+            "noise": "nonsense",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 7,
+            "noise": "typo",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 8,
+            "noise": "ambiguous",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 9,
+            "noise": "out_of_scope",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 10,
+            "noise": "contradiction_t2",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 11,
+            "noise": "incomplete",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 12,
+            "noise": "nonsense_prefix",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 13,
+            "noise": "typo",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 14,
+            "noise": "ambiguous",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 15,
+            "noise": "contradiction_t2",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          }
+        ],
+        "band": "POOR"
+      }
+    },
+    "cus": {
+      "normalized": {
+        "CR": 0.0,
+        "RT": 99.16,
+        "HR": 0.0,
+        "ER": 0.0
+      },
+      "cus": 24.79,
+      "complete": false,
+      "missing": [
+        "MATTR"
+      ]
+    }
+  },
+  "run1_Llama3": {
+    "scores": {
+      "CR": {
+        "score": 33.3,
+        "passed": 2,
+        "total": 6,
+        "invalid": 0,
+        "details": [
+          {
+            "turn": 5,
+            "pass": true,
+            "reason": "PASS - no unsafe meat/fish"
+          },
+          {
+            "turn": 10,
+            "pass": false,
+            "reason": "MEAT_SUGGESTED: ['bacon', 'bolognese', 'carbonara', 'meat']"
+          },
+          {
+            "turn": 15,
+            "pass": false,
+            "reason": "NO_VEG_FLAG (meat mentions: ['amatriciana', 'carbonara', 'meats'])"
+          },
+          {
+            "turn": 20,
+            "pass": false,
+            "reason": "NO_VEG_FLAG (meat mentions: ['meats'])"
+          },
+          {
+            "turn": 25,
+            "pass": false,
+            "reason": "MEAT_SUGGESTED: ['bistecca', 'boar', 'chicken', 'cinghiale']"
+          },
+          {
+            "turn": 30,
+            "pass": true,
+            "reason": "PASS - no unsafe meat/fish"
+          }
+        ]
+      },
+      "RT": {
+        "mean_ms": 17730.0,
+        "median_ms": 19975.1,
+        "sd_ms": 9023.2,
+        "p95_ms": 29756.4,
+        "n": 94,
+        "errors": 0,
+        "score": 17730.0,
+        "ms_per_generated_token": 41.6,
+        "corr_latency_vs_tokens": 0.993,
+        "turns_with_model_load": 0,
+        "burst_vs_normal_pct": -50.3,
+        "band": "POOR"
+      },
+      "MATTR": {
+        "score": 0.7415,
+        "scored": 83,
+        "excluded": 11,
+        "band": "MODERATE"
+      },
+      "HR": {
+        "score": 100.0,
+        "passed": 15,
+        "total": 15,
+        "details": [
+          {
+            "turn": 1,
+            "pass": true,
+            "method": "rule",
+            "reason": "action verb + measurable outcome"
+          },
+          {
+            "turn": 2,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=5"
+          },
+          {
+            "turn": 3,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=4"
+          },
+          {
+            "turn": 4,
+            "pass": true,
+            "method": "rule",
+            "reason": "body_words=105"
+          },
+          {
+            "turn": 5,
+            "pass": true,
+            "method": "rule",
+            "reason": "dollar figure/range/named resource"
+          },
+          {
+            "turn": 6,
+            "pass": true,
+            "method": "rule",
+            "reason": "rewritten opening with specificity"
+          },
+          {
+            "turn": 7,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=5"
+          },
+          {
+            "turn": 8,
+            "pass": true,
+            "method": "rule",
+            "reason": "named: ['ama', 'facebook blueprint', 'google ads', 'google analytics']"
+          },
+          {
+            "turn": 9,
+            "pass": true,
+            "method": "rule",
+            "reason": "8 placeholders"
+          },
+          {
+            "turn": 10,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=4"
+          },
+          {
+            "turn": 11,
+            "pass": true,
+            "method": "rule",
+            "reason": "categories: ['linkedin', 'glassdoor', 'website', 'news', 'financials', 'social', 'product']"
+          },
+          {
+            "turn": 12,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=4"
+          },
+          {
+            "turn": 13,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=5"
+          },
+          {
+            "turn": 14,
+            "pass": true,
+            "method": "rule",
+            "reason": "quoted/formatted headline"
+          },
+          {
+            "turn": 15,
+            "pass": true,
+            "method": "rule",
+            "reason": "all 3 facts"
+          }
+        ],
+        "band": "GOOD"
+      },
+      "ER": {
+        "score": 6.7,
+        "failed": 1,
+        "total": 15,
+        "hard": 0,
+        "by_noise_failed": {
+          "contradiction": 1
+        },
+        "details": [
+          {
+            "turn": 1,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 2,
+            "noise": "ambiguous",
+            "ok": true,
+            "severity": "OK",
+            "reason": "clarification requested, nothing guessed"
+          },
+          {
+            "turn": 3,
+            "noise": "out_of_scope",
+            "ok": true,
+            "severity": "OK",
+            "reason": "declined"
+          },
+          {
+            "turn": 4,
+            "noise": "contradiction_t2",
+            "ok": true,
+            "severity": "OK",
+            "reason": "pivoted to exchange"
+          },
+          {
+            "turn": 5,
+            "noise": "incomplete",
+            "ok": true,
+            "severity": "OK",
+            "reason": "asked to complete"
+          },
+          {
+            "turn": 6,
+            "noise": "nonsense",
+            "ok": true,
+            "severity": "OK",
+            "reason": "confusion expressed"
+          },
+          {
+            "turn": 7,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 8,
+            "noise": "ambiguous",
+            "ok": true,
+            "severity": "OK",
+            "reason": "clarification requested, nothing guessed"
+          },
+          {
+            "turn": 9,
+            "noise": "out_of_scope",
+            "ok": true,
+            "severity": "OK",
+            "reason": "declined"
+          },
+          {
+            "turn": 10,
+            "noise": "contradiction_t2",
+            "ok": false,
+            "severity": "SOFT",
+            "reason": "colour change not acknowledged"
+          },
+          {
+            "turn": 11,
+            "noise": "incomplete",
+            "ok": true,
+            "severity": "OK",
+            "reason": "asked to complete"
+          },
+          {
+            "turn": 12,
+            "noise": "nonsense_prefix",
+            "ok": true,
+            "severity": "SOFT",
+            "reason": "warranty request extracted"
+          },
+          {
+            "turn": 13,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 14,
+            "noise": "ambiguous",
+            "ok": true,
+            "severity": "OK",
+            "reason": "clarification requested, nothing guessed"
+          },
+          {
+            "turn": 15,
+            "noise": "contradiction_t2",
+            "ok": true,
+            "severity": "OK",
+            "reason": "acknowledged resolution"
+          }
+        ],
+        "band": "GOOD"
+      }
+    },
+    "cus": {
+      "normalized": {
+        "CR": 33.3,
+        "RT": 0.0,
+        "HR": 100.0,
+        "MATTR": 74.15,
+        "ER": 93.3
+      },
+      "cus": 60.15,
+      "complete": true,
+      "missing": []
+    }
+  },
+  "run1_Mistral": {
+    "scores": {
+      "CR": {
+        "score": 16.7,
+        "passed": 1,
+        "total": 6,
+        "invalid": 0,
+        "details": [
+          {
+            "turn": 5,
+            "pass": true,
+            "reason": "PASS - no unsafe meat/fish"
+          },
+          {
+            "turn": 10,
+            "pass": false,
+            "reason": "MEAT_SUGGESTED: ['carbonara', 'chicken', 'clams', 'guanciale']"
+          },
+          {
+            "turn": 15,
+            "pass": false,
+            "reason": "NO_VEG_FLAG (meat mentions: ['amatriciana', 'carbonara', 'coda alla vaccinara'])"
+          },
+          {
+            "turn": 20,
+            "pass": false,
+            "reason": "NO_VEG_FLAG (meat mentions: ['meats'])"
+          },
+          {
+            "turn": 25,
+            "pass": false,
+            "reason": "MEAT_SUGGESTED: ['bistecca', 'boar', 'cinghiale', 'ragu']"
+          },
+          {
+            "turn": 30,
+            "pass": false,
+            "reason": "MEAT_SUGGESTED: ['ham', 'meat', 'meats', 'mortadella']"
+          }
+        ]
+      },
+      "RT": {
+        "mean_ms": 12186.7,
+        "median_ms": 12260.3,
+        "sd_ms": 7103.8,
+        "p95_ms": 22191.5,
+        "n": 94,
+        "errors": 0,
+        "score": 12186.7,
+        "ms_per_generated_token": 39.3,
+        "corr_latency_vs_tokens": 0.993,
+        "turns_with_model_load": 0,
+        "burst_vs_normal_pct": -57.9,
+        "band": "POOR"
+      },
+      "MATTR": {
+        "score": 0.7562,
+        "scored": 89,
+        "excluded": 5,
+        "band": "GOOD"
+      },
+      "HR": {
+        "score": 86.7,
+        "passed": 13,
+        "total": 15,
+        "details": [
+          {
+            "turn": 1,
+            "pass": true,
+            "method": "rule",
+            "reason": "action verb + measurable outcome"
+          },
+          {
+            "turn": 2,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=5"
+          },
+          {
+            "turn": 3,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=4"
+          },
+          {
+            "turn": 4,
+            "pass": true,
+            "method": "rule",
+            "reason": "body_words=147"
+          },
+          {
+            "turn": 5,
+            "pass": true,
+            "method": "rule",
+            "reason": "dollar figure/range/named resource"
+          },
+          {
+            "turn": 6,
+            "pass": true,
+            "method": "rule",
+            "reason": "rewritten opening with specificity"
+          },
+          {
+            "turn": 7,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=5"
+          },
+          {
+            "turn": 8,
+            "pass": true,
+            "method": "rule",
+            "reason": "named: ['google analytics', 'hootsuite', 'hubspot']"
+          },
+          {
+            "turn": 9,
+            "pass": true,
+            "method": "rule",
+            "reason": "7 placeholders"
+          },
+          {
+            "turn": 10,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=3"
+          },
+          {
+            "turn": 11,
+            "pass": true,
+            "method": "rule",
+            "reason": "categories: ['website', 'news', 'social', 'product']"
+          },
+          {
+            "turn": 12,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=4"
+          },
+          {
+            "turn": 13,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=3"
+          },
+          {
+            "turn": 14,
+            "pass": true,
+            "method": "rule",
+            "reason": "quoted/formatted headline"
+          },
+          {
+            "turn": 15,
+            "pass": true,
+            "method": "rule",
+            "reason": "all 3 facts"
+          }
+        ],
+        "band": "GOOD"
+      },
+      "ER": {
+        "score": 13.3,
+        "failed": 2,
+        "total": 15,
+        "hard": 0,
+        "by_noise_failed": {
+          "nonsense": 1,
+          "ambiguous": 1
+        },
+        "details": [
+          {
+            "turn": 1,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 2,
+            "noise": "ambiguous",
+            "ok": true,
+            "severity": "OK",
+            "reason": "clarification requested, nothing guessed"
+          },
+          {
+            "turn": 3,
+            "noise": "out_of_scope",
+            "ok": true,
+            "severity": "OK",
+            "reason": "declined"
+          },
+          {
+            "turn": 4,
+            "noise": "contradiction_t2",
+            "ok": true,
+            "severity": "OK",
+            "reason": "pivoted to exchange"
+          },
+          {
+            "turn": 5,
+            "noise": "incomplete",
+            "ok": true,
+            "severity": "OK",
+            "reason": "asked to complete"
+          },
+          {
+            "turn": 6,
+            "noise": "nonsense",
+            "ok": false,
+            "severity": "SOFT",
+            "reason": "fabricated answer to nonsense"
+          },
+          {
+            "turn": 7,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 8,
+            "noise": "ambiguous",
+            "ok": true,
+            "severity": "OK",
+            "reason": "clarification requested, nothing guessed"
+          },
+          {
+            "turn": 9,
+            "noise": "out_of_scope",
+            "ok": true,
+            "severity": "OK",
+            "reason": "declined"
+          },
+          {
+            "turn": 10,
+            "noise": "contradiction_t2",
+            "ok": true,
+            "severity": "OK",
+            "reason": "switched to colour change"
+          },
+          {
+            "turn": 11,
+            "noise": "incomplete",
+            "ok": true,
+            "severity": "OK",
+            "reason": "asked to complete"
+          },
+          {
+            "turn": 12,
+            "noise": "nonsense_prefix",
+            "ok": true,
+            "severity": "SOFT",
+            "reason": "warranty request extracted"
+          },
+          {
+            "turn": 13,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 14,
+            "noise": "ambiguous",
+            "ok": false,
+            "severity": "SOFT",
+            "reason": "no clarification"
+          },
+          {
+            "turn": 15,
+            "noise": "contradiction_t2",
+            "ok": true,
+            "severity": "OK",
+            "reason": "acknowledged resolution"
+          }
+        ],
+        "band": "MODERATE"
+      }
+    },
+    "cus": {
+      "normalized": {
+        "CR": 16.7,
+        "RT": 0.0,
+        "HR": 86.7,
+        "MATTR": 75.62,
+        "ER": 86.7
+      },
+      "cus": 53.14,
+      "complete": true,
+      "missing": []
+    }
+  },
+  "run2_Rasa": {
+    "scores": {
+      "CR": {
+        "score": 0.0,
+        "passed": 0,
+        "total": 6,
+        "invalid": 0,
+        "details": [
+          {
+            "turn": 5,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          },
+          {
+            "turn": 10,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          },
+          {
+            "turn": 15,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          },
+          {
+            "turn": 20,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          },
+          {
+            "turn": 25,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          },
+          {
+            "turn": 30,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          }
+        ]
+      },
+      "RT": {
+        "mean_ms": 192.6,
+        "median_ms": 160.6,
+        "sd_ms": 135.7,
+        "p95_ms": 315.2,
+        "n": 94,
+        "errors": 0,
+        "score": 192.6,
+        "turns_with_model_load": 0,
+        "burst_vs_normal_pct": -3.2,
+        "band": "GOOD"
+      },
+      "MATTR": {
+        "score": null,
+        "scored": 0,
+        "excluded": 94
+      },
+      "HR": {
+        "score": 0.0,
+        "passed": 0,
+        "total": 15,
+        "details": [
+          {
+            "turn": 1,
+            "pass": false,
+            "method": "rule",
+            "reason": "no rewritten bullet with action verb AND measurable outcome"
+          },
+          {
+            "turn": 2,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 3,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 4,
+            "pass": false,
+            "method": "rule",
+            "reason": "greeting=False closing=False"
+          },
+          {
+            "turn": 5,
+            "pass": false,
+            "method": "rule",
+            "reason": "no figure or named resource"
+          },
+          {
+            "turn": 6,
+            "pass": false,
+            "method": "rule",
+            "reason": "no more-specific rewrite found"
+          },
+          {
+            "turn": 7,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 8,
+            "pass": false,
+            "method": "rule",
+            "reason": "no verifiable certification named"
+          },
+          {
+            "turn": 9,
+            "pass": false,
+            "method": "rule",
+            "reason": "0 placeholders"
+          },
+          {
+            "turn": 10,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 11,
+            "pass": false,
+            "method": "rule",
+            "reason": "categories: []"
+          },
+          {
+            "turn": 12,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 13,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 14,
+            "pass": false,
+            "method": "rule",
+            "reason": "no quoted/bold headline"
+          },
+          {
+            "turn": 15,
+            "pass": false,
+            "method": "rule",
+            "reason": "missing ['leadership', 'conversion', 'budget']"
+          }
+        ],
+        "band": "POOR"
+      },
+      "ER": {
+        "score": 100.0,
+        "failed": 15,
+        "total": 15,
+        "hard": 15,
+        "by_noise_failed": {
+          "typo": 3,
+          "ambiguous": 3,
+          "out_of_scope": 2,
+          "contradiction": 3,
+          "incomplete": 2,
+          "nonsense": 1,
+          "nonsense_prefix": 1
+        },
+        "details": [
+          {
+            "turn": 1,
+            "noise": "typo",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 2,
+            "noise": "ambiguous",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 3,
+            "noise": "out_of_scope",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 4,
+            "noise": "contradiction_t2",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 5,
+            "noise": "incomplete",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 6,
+            "noise": "nonsense",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 7,
+            "noise": "typo",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 8,
+            "noise": "ambiguous",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 9,
+            "noise": "out_of_scope",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 10,
+            "noise": "contradiction_t2",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 11,
+            "noise": "incomplete",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 12,
+            "noise": "nonsense_prefix",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 13,
+            "noise": "typo",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 14,
+            "noise": "ambiguous",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 15,
+            "noise": "contradiction_t2",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          }
+        ],
+        "band": "POOR"
+      }
+    },
+    "cus": {
+      "normalized": {
+        "CR": 0.0,
+        "RT": 98.07,
+        "HR": 0.0,
+        "ER": 0.0
+      },
+      "cus": 24.52,
+      "complete": false,
+      "missing": [
+        "MATTR"
+      ]
+    }
+  },
+  "run2_Llama3": {
+    "scores": {
+      "CR": {
+        "score": 33.3,
+        "passed": 2,
+        "total": 6,
+        "invalid": 0,
+        "details": [
+          {
+            "turn": 5,
+            "pass": true,
+            "reason": "PASS - no unsafe meat/fish"
+          },
+          {
+            "turn": 10,
+            "pass": false,
+            "reason": "MEAT_SUGGESTED: ['bacon', 'carbonara', 'meat', 'pancetta']"
+          },
+          {
+            "turn": 15,
+            "pass": false,
+            "reason": "NO_VEG_FLAG (meat mentions: ['amatriciana', 'carbonara', 'rag\u00f9'])"
+          },
+          {
+            "turn": 20,
+            "pass": false,
+            "reason": "NO_VEG_FLAG (meat mentions: ['ham', 'meats'])"
+          },
+          {
+            "turn": 25,
+            "pass": false,
+            "reason": "MEAT_SUGGESTED: ['bistecca', 'steak', 'tripe']"
+          },
+          {
+            "turn": 30,
+            "pass": true,
+            "reason": "PASS - no unsafe meat/fish"
+          }
+        ]
+      },
+      "RT": {
+        "mean_ms": 18320.8,
+        "median_ms": 19468.8,
+        "sd_ms": 9712.5,
+        "p95_ms": 32854.5,
+        "n": 94,
+        "errors": 0,
+        "score": 18320.8,
+        "ms_per_generated_token": 41.7,
+        "corr_latency_vs_tokens": 0.991,
+        "turns_with_model_load": 0,
+        "burst_vs_normal_pct": -48.5,
+        "band": "POOR"
+      },
+      "MATTR": {
+        "score": 0.7278,
+        "scored": 86,
+        "excluded": 8,
+        "band": "MODERATE"
+      },
+      "HR": {
+        "score": 100.0,
+        "passed": 15,
+        "total": 15,
+        "details": [
+          {
+            "turn": 1,
+            "pass": true,
+            "method": "rule",
+            "reason": "action verb + measurable outcome"
+          },
+          {
+            "turn": 2,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=5"
+          },
+          {
+            "turn": 3,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=4"
+          },
+          {
+            "turn": 4,
+            "pass": true,
+            "method": "rule",
+            "reason": "body_words=132"
+          },
+          {
+            "turn": 5,
+            "pass": true,
+            "method": "rule",
+            "reason": "dollar figure/range/named resource"
+          },
+          {
+            "turn": 6,
+            "pass": true,
+            "method": "rule",
+            "reason": "rewritten opening with specificity"
+          },
+          {
+            "turn": 7,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=5"
+          },
+          {
+            "turn": 8,
+            "pass": true,
+            "method": "rule",
+            "reason": "named: ['ama', 'facebook blueprint', 'google ads', 'google analytics']"
+          },
+          {
+            "turn": 9,
+            "pass": true,
+            "method": "rule",
+            "reason": "10 placeholders"
+          },
+          {
+            "turn": 10,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=4"
+          },
+          {
+            "turn": 11,
+            "pass": true,
+            "method": "rule",
+            "reason": "categories: ['linkedin', 'glassdoor', 'website', 'news', 'social', 'network', 'product']"
+          },
+          {
+            "turn": 12,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=5"
+          },
+          {
+            "turn": 13,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=5"
+          },
+          {
+            "turn": 14,
+            "pass": true,
+            "method": "rule",
+            "reason": "quoted/formatted headline"
+          },
+          {
+            "turn": 15,
+            "pass": true,
+            "method": "rule",
+            "reason": "all 3 facts"
+          }
+        ],
+        "band": "GOOD"
+      },
+      "ER": {
+        "score": 6.7,
+        "failed": 1,
+        "total": 15,
+        "hard": 0,
+        "by_noise_failed": {
+          "ambiguous": 1
+        },
+        "details": [
+          {
+            "turn": 1,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 2,
+            "noise": "ambiguous",
+            "ok": false,
+            "severity": "SOFT",
+            "reason": "no clarification"
+          },
+          {
+            "turn": 3,
+            "noise": "out_of_scope",
+            "ok": true,
+            "severity": "OK",
+            "reason": "declined"
+          },
+          {
+            "turn": 4,
+            "noise": "contradiction_t2",
+            "ok": true,
+            "severity": "OK",
+            "reason": "pivoted to exchange"
+          },
+          {
+            "turn": 5,
+            "noise": "incomplete",
+            "ok": true,
+            "severity": "OK",
+            "reason": "asked to complete"
+          },
+          {
+            "turn": 6,
+            "noise": "nonsense",
+            "ok": true,
+            "severity": "OK",
+            "reason": "confusion expressed"
+          },
+          {
+            "turn": 7,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 8,
+            "noise": "ambiguous",
+            "ok": true,
+            "severity": "OK",
+            "reason": "clarification requested, nothing guessed"
+          },
+          {
+            "turn": 9,
+            "noise": "out_of_scope",
+            "ok": true,
+            "severity": "OK",
+            "reason": "declined"
+          },
+          {
+            "turn": 10,
+            "noise": "contradiction_t2",
+            "ok": true,
+            "severity": "OK",
+            "reason": "switched to colour change"
+          },
+          {
+            "turn": 11,
+            "noise": "incomplete",
+            "ok": true,
+            "severity": "OK",
+            "reason": "asked to complete"
+          },
+          {
+            "turn": 12,
+            "noise": "nonsense_prefix",
+            "ok": true,
+            "severity": "SOFT",
+            "reason": "warranty request extracted"
+          },
+          {
+            "turn": 13,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 14,
+            "noise": "ambiguous",
+            "ok": true,
+            "severity": "OK",
+            "reason": "clarification requested, nothing guessed"
+          },
+          {
+            "turn": 15,
+            "noise": "contradiction_t2",
+            "ok": true,
+            "severity": "OK",
+            "reason": "acknowledged resolution"
+          }
+        ],
+        "band": "GOOD"
+      }
+    },
+    "cus": {
+      "normalized": {
+        "CR": 33.3,
+        "RT": 0.0,
+        "HR": 100.0,
+        "MATTR": 72.78,
+        "ER": 93.3
+      },
+      "cus": 59.88,
+      "complete": true,
+      "missing": []
+    }
+  },
+  "run2_Mistral": {
+    "scores": {
+      "CR": {
+        "score": 0.0,
+        "passed": 0,
+        "total": 6,
+        "invalid": 0,
+        "details": [
+          {
+            "turn": 5,
+            "pass": false,
+            "reason": "MEAT_SUGGESTED: ['salmon']"
+          },
+          {
+            "turn": 10,
+            "pass": false,
+            "reason": "MEAT_SUGGESTED: ['chicken', 'meats']"
+          },
+          {
+            "turn": 15,
+            "pass": false,
+            "reason": "NO_VEG_FLAG (meat mentions: ['amatriciana', 'carbonara', 'lamb'])"
+          },
+          {
+            "turn": 20,
+            "pass": false,
+            "reason": "NO_VEG_FLAG (meat mentions: [])"
+          },
+          {
+            "turn": 25,
+            "pass": false,
+            "reason": "MEAT_SUGGESTED: ['bistecca', 'boar', 'cinghiale', 'prosciutto']"
+          },
+          {
+            "turn": 30,
+            "pass": false,
+            "reason": "MEAT_SUGGESTED: ['ham', 'meat', 'prosciutto']"
+          }
+        ]
+      },
+      "RT": {
+        "mean_ms": 10772.0,
+        "median_ms": 11811.1,
+        "sd_ms": 4916.7,
+        "p95_ms": 18009.0,
+        "n": 94,
+        "errors": 0,
+        "score": 10772.0,
+        "ms_per_generated_token": 39.5,
+        "corr_latency_vs_tokens": 0.994,
+        "turns_with_model_load": 0,
+        "burst_vs_normal_pct": -56.2,
+        "band": "POOR"
+      },
+      "MATTR": {
+        "score": 0.7675,
+        "scored": 88,
+        "excluded": 6,
+        "band": "GOOD"
+      },
+      "HR": {
+        "score": 93.3,
+        "passed": 14,
+        "total": 15,
+        "details": [
+          {
+            "turn": 1,
+            "pass": true,
+            "method": "rule",
+            "reason": "action verb + measurable outcome"
+          },
+          {
+            "turn": 2,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=5"
+          },
+          {
+            "turn": 3,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=5"
+          },
+          {
+            "turn": 4,
+            "pass": true,
+            "method": "rule",
+            "reason": "body_words=133"
+          },
+          {
+            "turn": 5,
+            "pass": true,
+            "method": "rule",
+            "reason": "dollar figure/range/named resource"
+          },
+          {
+            "turn": 6,
+            "pass": true,
+            "method": "rule",
+            "reason": "rewritten opening with specificity"
+          },
+          {
+            "turn": 7,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=5"
+          },
+          {
+            "turn": 8,
+            "pass": true,
+            "method": "rule",
+            "reason": "named: ['facebook blueprint', 'google analytics', 'hootsuite', 'hubspot']"
+          },
+          {
+            "turn": 9,
+            "pass": true,
+            "method": "rule",
+            "reason": "11 placeholders"
+          },
+          {
+            "turn": 10,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=3"
+          },
+          {
+            "turn": 11,
+            "pass": true,
+            "method": "rule",
+            "reason": "categories: ['linkedin', 'website', 'news', 'social', 'product']"
+          },
+          {
+            "turn": 12,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=4"
+          },
+          {
+            "turn": 13,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=4"
+          },
+          {
+            "turn": 14,
+            "pass": true,
+            "method": "rule",
+            "reason": "quoted/formatted headline"
+          },
+          {
+            "turn": 15,
+            "pass": true,
+            "method": "rule",
+            "reason": "all 3 facts"
+          }
+        ],
+        "band": "GOOD"
+      },
+      "ER": {
+        "score": 20.0,
+        "failed": 3,
+        "total": 15,
+        "hard": 0,
+        "by_noise_failed": {
+          "ambiguous": 2,
+          "incomplete": 1
+        },
+        "details": [
+          {
+            "turn": 1,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 2,
+            "noise": "ambiguous",
+            "ok": true,
+            "severity": "OK",
+            "reason": "clarification requested, nothing guessed"
+          },
+          {
+            "turn": 3,
+            "noise": "out_of_scope",
+            "ok": true,
+            "severity": "OK",
+            "reason": "declined"
+          },
+          {
+            "turn": 4,
+            "noise": "contradiction_t2",
+            "ok": true,
+            "severity": "OK",
+            "reason": "pivoted to exchange"
+          },
+          {
+            "turn": 5,
+            "noise": "incomplete",
+            "ok": true,
+            "severity": "OK",
+            "reason": "asked to complete"
+          },
+          {
+            "turn": 6,
+            "noise": "nonsense",
+            "ok": true,
+            "severity": "OK",
+            "reason": "confusion expressed"
+          },
+          {
+            "turn": 7,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 8,
+            "noise": "ambiguous",
+            "ok": false,
+            "severity": "SOFT",
+            "reason": "no clarification"
+          },
+          {
+            "turn": 9,
+            "noise": "out_of_scope",
+            "ok": true,
+            "severity": "OK",
+            "reason": "declined"
+          },
+          {
+            "turn": 10,
+            "noise": "contradiction_t2",
+            "ok": true,
+            "severity": "OK",
+            "reason": "switched to colour change"
+          },
+          {
+            "turn": 11,
+            "noise": "incomplete",
+            "ok": false,
+            "severity": "SOFT",
+            "reason": "answered a guessed completion"
+          },
+          {
+            "turn": 12,
+            "noise": "nonsense_prefix",
+            "ok": true,
+            "severity": "SOFT",
+            "reason": "warranty request extracted"
+          },
+          {
+            "turn": 13,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 14,
+            "noise": "ambiguous",
+            "ok": false,
+            "severity": "SOFT",
+            "reason": "no clarification"
+          },
+          {
+            "turn": 15,
+            "noise": "contradiction_t2",
+            "ok": true,
+            "severity": "OK",
+            "reason": "acknowledged resolution"
+          }
+        ],
+        "band": "MODERATE"
+      }
+    },
+    "cus": {
+      "normalized": {
+        "CR": 0.0,
+        "RT": 0.0,
+        "HR": 93.3,
+        "MATTR": 76.75,
+        "ER": 80.0
+      },
+      "cus": 50.01,
+      "complete": true,
+      "missing": []
+    }
+  },
+  "run3_Rasa": {
+    "scores": {
+      "CR": {
+        "score": 0.0,
+        "passed": 0,
+        "total": 6,
+        "invalid": 0,
+        "details": [
+          {
+            "turn": 5,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          },
+          {
+            "turn": 10,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          },
+          {
+            "turn": 15,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          },
+          {
+            "turn": 20,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          },
+          {
+            "turn": 25,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          },
+          {
+            "turn": 30,
+            "pass": false,
+            "reason": "NON_ANSWER_OR_TOO_SHORT"
+          }
+        ]
+      },
+      "RT": {
+        "mean_ms": 289.4,
+        "median_ms": 244.2,
+        "sd_ms": 114.2,
+        "p95_ms": 559.3,
+        "n": 94,
+        "errors": 0,
+        "score": 289.4,
+        "turns_with_model_load": 0,
+        "burst_vs_normal_pct": -1.1,
+        "band": "GOOD"
+      },
+      "MATTR": {
+        "score": null,
+        "scored": 0,
+        "excluded": 94
+      },
+      "HR": {
+        "score": 0.0,
+        "passed": 0,
+        "total": 15,
+        "details": [
+          {
+            "turn": 1,
+            "pass": false,
+            "method": "rule",
+            "reason": "no rewritten bullet with action verb AND measurable outcome"
+          },
+          {
+            "turn": 2,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 3,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 4,
+            "pass": false,
+            "method": "rule",
+            "reason": "greeting=False closing=False"
+          },
+          {
+            "turn": 5,
+            "pass": false,
+            "method": "rule",
+            "reason": "no figure or named resource"
+          },
+          {
+            "turn": 6,
+            "pass": false,
+            "method": "rule",
+            "reason": "no more-specific rewrite found"
+          },
+          {
+            "turn": 7,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 8,
+            "pass": false,
+            "method": "rule",
+            "reason": "no verifiable certification named"
+          },
+          {
+            "turn": 9,
+            "pass": false,
+            "method": "rule",
+            "reason": "0 placeholders"
+          },
+          {
+            "turn": 10,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 11,
+            "pass": false,
+            "method": "rule",
+            "reason": "categories: []"
+          },
+          {
+            "turn": 12,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 13,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=1"
+          },
+          {
+            "turn": 14,
+            "pass": false,
+            "method": "rule",
+            "reason": "no quoted/bold headline"
+          },
+          {
+            "turn": 15,
+            "pass": false,
+            "method": "rule",
+            "reason": "missing ['leadership', 'conversion', 'budget']"
+          }
+        ],
+        "band": "POOR"
+      },
+      "ER": {
+        "score": 100.0,
+        "failed": 15,
+        "total": 15,
+        "hard": 15,
+        "by_noise_failed": {
+          "typo": 3,
+          "ambiguous": 3,
+          "out_of_scope": 2,
+          "contradiction": 3,
+          "incomplete": 2,
+          "nonsense": 1,
+          "nonsense_prefix": 1
+        },
+        "details": [
+          {
+            "turn": 1,
+            "noise": "typo",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 2,
+            "noise": "ambiguous",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 3,
+            "noise": "out_of_scope",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 4,
+            "noise": "contradiction_t2",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 5,
+            "noise": "incomplete",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 6,
+            "noise": "nonsense",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 7,
+            "noise": "typo",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 8,
+            "noise": "ambiguous",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 9,
+            "noise": "out_of_scope",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 10,
+            "noise": "contradiction_t2",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 11,
+            "noise": "incomplete",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 12,
+            "noise": "nonsense_prefix",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 13,
+            "noise": "typo",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 14,
+            "noise": "ambiguous",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          },
+          {
+            "turn": 15,
+            "noise": "contradiction_t2",
+            "ok": false,
+            "severity": "HARD",
+            "reason": "RASA_DEFAULT_REPLY"
+          }
+        ],
+        "band": "POOR"
+      }
+    },
+    "cus": {
+      "normalized": {
+        "CR": 0.0,
+        "RT": 97.11,
+        "HR": 0.0,
+        "ER": 0.0
+      },
+      "cus": 24.28,
+      "complete": false,
+      "missing": [
+        "MATTR"
+      ]
+    }
+  },
+  "run3_Llama3": {
+    "scores": {
+      "CR": {
+        "score": 33.3,
+        "passed": 2,
+        "total": 6,
+        "invalid": 0,
+        "details": [
+          {
+            "turn": 5,
+            "pass": true,
+            "reason": "PASS - no unsafe meat/fish"
+          },
+          {
+            "turn": 10,
+            "pass": false,
+            "reason": "MEAT_SUGGESTED: ['bacon', 'beef', 'bolognese', 'carbonara']"
+          },
+          {
+            "turn": 15,
+            "pass": false,
+            "reason": "NO_VEG_FLAG (meat mentions: ['amatriciana', 'carbonara', 'seafood'])"
+          },
+          {
+            "turn": 20,
+            "pass": false,
+            "reason": "NO_VEG_FLAG (meat mentions: ['meat'])"
+          },
+          {
+            "turn": 25,
+            "pass": true,
+            "reason": "PASS - no unsafe meat/fish"
+          },
+          {
+            "turn": 30,
+            "pass": false,
+            "reason": "MEAT_SUGGESTED: ['carbonara', 'ossobuco']"
+          }
+        ]
+      },
+      "RT": {
+        "mean_ms": 16629.3,
+        "median_ms": 17667.3,
+        "sd_ms": 8992.7,
+        "p95_ms": 30104.5,
+        "n": 94,
+        "errors": 0,
+        "score": 16629.3,
+        "ms_per_generated_token": 41.5,
+        "corr_latency_vs_tokens": 0.987,
+        "turns_with_model_load": 0,
+        "burst_vs_normal_pct": -40.3,
+        "band": "POOR"
+      },
+      "MATTR": {
+        "score": 0.7448,
+        "scored": 84,
+        "excluded": 10,
+        "band": "MODERATE"
+      },
+      "HR": {
+        "score": 100.0,
+        "passed": 15,
+        "total": 15,
+        "details": [
+          {
+            "turn": 1,
+            "pass": true,
+            "method": "rule",
+            "reason": "action verb + measurable outcome"
+          },
+          {
+            "turn": 2,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=5"
+          },
+          {
+            "turn": 3,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=5"
+          },
+          {
+            "turn": 4,
+            "pass": true,
+            "method": "rule",
+            "reason": "body_words=104"
+          },
+          {
+            "turn": 5,
+            "pass": true,
+            "method": "rule",
+            "reason": "dollar figure/range/named resource"
+          },
+          {
+            "turn": 6,
+            "pass": true,
+            "method": "rule",
+            "reason": "rewritten opening with specificity"
+          },
+          {
+            "turn": 7,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=5"
+          },
+          {
+            "turn": 8,
+            "pass": true,
+            "method": "rule",
+            "reason": "named: ['ama', 'digital marketing institute', 'facebook blueprint', 'google ads']"
+          },
+          {
+            "turn": 9,
+            "pass": true,
+            "method": "rule",
+            "reason": "11 placeholders"
+          },
+          {
+            "turn": 10,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=4"
+          },
+          {
+            "turn": 11,
+            "pass": true,
+            "method": "rule",
+            "reason": "categories: ['linkedin', 'glassdoor', 'website', 'news', 'financials', 'social', 'network', 'product']"
+          },
+          {
+            "turn": 12,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=4"
+          },
+          {
+            "turn": 13,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=5"
+          },
+          {
+            "turn": 14,
+            "pass": true,
+            "method": "rule",
+            "reason": "quoted/formatted headline"
+          },
+          {
+            "turn": 15,
+            "pass": true,
+            "method": "rule",
+            "reason": "all 3 facts"
+          }
+        ],
+        "band": "GOOD"
+      },
+      "ER": {
+        "score": 13.3,
+        "failed": 2,
+        "total": 15,
+        "hard": 0,
+        "by_noise_failed": {
+          "out_of_scope": 1,
+          "contradiction": 1
+        },
+        "details": [
+          {
+            "turn": 1,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 2,
+            "noise": "ambiguous",
+            "ok": true,
+            "severity": "OK",
+            "reason": "clarification requested, nothing guessed"
+          },
+          {
+            "turn": 3,
+            "noise": "out_of_scope",
+            "ok": true,
+            "severity": "OK",
+            "reason": "declined"
+          },
+          {
+            "turn": 4,
+            "noise": "contradiction_t2",
+            "ok": true,
+            "severity": "OK",
+            "reason": "pivoted to exchange"
+          },
+          {
+            "turn": 5,
+            "noise": "incomplete",
+            "ok": true,
+            "severity": "OK",
+            "reason": "asked to complete"
+          },
+          {
+            "turn": 6,
+            "noise": "nonsense",
+            "ok": true,
+            "severity": "OK",
+            "reason": "confusion expressed"
+          },
+          {
+            "turn": 7,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 8,
+            "noise": "ambiguous",
+            "ok": true,
+            "severity": "OK",
+            "reason": "clarification requested, nothing guessed"
+          },
+          {
+            "turn": 9,
+            "noise": "out_of_scope",
+            "ok": false,
+            "severity": "SOFT",
+            "reason": "did not decline"
+          },
+          {
+            "turn": 10,
+            "noise": "contradiction_t2",
+            "ok": true,
+            "severity": "OK",
+            "reason": "switched to colour change"
+          },
+          {
+            "turn": 11,
+            "noise": "incomplete",
+            "ok": true,
+            "severity": "OK",
+            "reason": "asked to complete"
+          },
+          {
+            "turn": 12,
+            "noise": "nonsense_prefix",
+            "ok": true,
+            "severity": "SOFT",
+            "reason": "warranty request extracted"
+          },
+          {
+            "turn": 13,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 14,
+            "noise": "ambiguous",
+            "ok": true,
+            "severity": "OK",
+            "reason": "clarification requested, nothing guessed"
+          },
+          {
+            "turn": 15,
+            "noise": "contradiction_t2",
+            "ok": false,
+            "severity": "SOFT",
+            "reason": "resolution not acknowledged"
+          }
+        ],
+        "band": "MODERATE"
+      }
+    },
+    "cus": {
+      "normalized": {
+        "CR": 33.3,
+        "RT": 0.0,
+        "HR": 100.0,
+        "MATTR": 74.48,
+        "ER": 86.7
+      },
+      "cus": 58.9,
+      "complete": true,
+      "missing": []
+    }
+  },
+  "run3_Mistral": {
+    "scores": {
+      "CR": {
+        "score": 16.7,
+        "passed": 1,
+        "total": 6,
+        "invalid": 0,
+        "details": [
+          {
+            "turn": 5,
+            "pass": true,
+            "reason": "PASS - no unsafe meat/fish"
+          },
+          {
+            "turn": 10,
+            "pass": false,
+            "reason": "MEAT_SUGGESTED: ['bacon', 'carbonara', 'chicken']"
+          },
+          {
+            "turn": 15,
+            "pass": false,
+            "reason": "NO_VEG_FLAG (meat mentions: ['amatriciana', 'carbonara', 'meats'])"
+          },
+          {
+            "turn": 20,
+            "pass": false,
+            "reason": "NO_VEG_FLAG (meat mentions: ['meats'])"
+          },
+          {
+            "turn": 25,
+            "pass": false,
+            "reason": "MEAT_SUGGESTED: ['mortadella', 'prosciutto']"
+          },
+          {
+            "turn": 30,
+            "pass": false,
+            "reason": "MEAT_SUGGESTED: ['meat']"
+          }
+        ]
+      },
+      "RT": {
+        "mean_ms": 8149.6,
+        "median_ms": 8802.5,
+        "sd_ms": 3825.4,
+        "p95_ms": 14134.8,
+        "n": 94,
+        "errors": 0,
+        "score": 8149.6,
+        "ms_per_generated_token": 29.5,
+        "corr_latency_vs_tokens": 0.993,
+        "turns_with_model_load": 0,
+        "burst_vs_normal_pct": -59.1,
+        "band": "MODERATE"
+      },
+      "MATTR": {
+        "score": 0.7558,
+        "scored": 86,
+        "excluded": 8,
+        "band": "GOOD"
+      },
+      "HR": {
+        "score": 73.3,
+        "passed": 11,
+        "total": 15,
+        "details": [
+          {
+            "turn": 1,
+            "pass": false,
+            "method": "rule",
+            "reason": "no rewritten bullet with action verb AND measurable outcome"
+          },
+          {
+            "turn": 2,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=4"
+          },
+          {
+            "turn": 3,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=4"
+          },
+          {
+            "turn": 4,
+            "pass": true,
+            "method": "rule",
+            "reason": "body_words=153"
+          },
+          {
+            "turn": 5,
+            "pass": true,
+            "method": "rule",
+            "reason": "dollar figure/range/named resource"
+          },
+          {
+            "turn": 6,
+            "pass": true,
+            "method": "rule",
+            "reason": "rewritten opening with specificity"
+          },
+          {
+            "turn": 7,
+            "pass": true,
+            "method": "judge",
+            "reason": "score=4"
+          },
+          {
+            "turn": 8,
+            "pass": true,
+            "method": "rule",
+            "reason": "named: ['google analytics', 'hootsuite', 'hubspot']"
+          },
+          {
+            "turn": 9,
+            "pass": true,
+            "method": "rule",
+            "reason": "7 placeholders"
+          },
+          {
+            "turn": 10,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=3"
+          },
+          {
+            "turn": 11,
+            "pass": true,
+            "method": "rule",
+            "reason": "categories: ['linkedin', 'glassdoor', 'website', 'news', 'social', 'product']"
+          },
+          {
+            "turn": 12,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=3"
+          },
+          {
+            "turn": 13,
+            "pass": false,
+            "method": "judge",
+            "reason": "score=3"
+          },
+          {
+            "turn": 14,
+            "pass": true,
+            "method": "rule",
+            "reason": "quoted/formatted headline"
+          },
+          {
+            "turn": 15,
+            "pass": true,
+            "method": "rule",
+            "reason": "all 3 facts"
+          }
+        ],
+        "band": "MODERATE"
+      },
+      "ER": {
+        "score": 26.7,
+        "failed": 4,
+        "total": 15,
+        "hard": 0,
+        "by_noise_failed": {
+          "incomplete": 2,
+          "ambiguous": 2
+        },
+        "details": [
+          {
+            "turn": 1,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 2,
+            "noise": "ambiguous",
+            "ok": true,
+            "severity": "OK",
+            "reason": "clarification requested, nothing guessed"
+          },
+          {
+            "turn": 3,
+            "noise": "out_of_scope",
+            "ok": true,
+            "severity": "OK",
+            "reason": "declined"
+          },
+          {
+            "turn": 4,
+            "noise": "contradiction_t2",
+            "ok": true,
+            "severity": "OK",
+            "reason": "pivoted to exchange"
+          },
+          {
+            "turn": 5,
+            "noise": "incomplete",
+            "ok": false,
+            "severity": "SOFT",
+            "reason": "answered a guessed completion"
+          },
+          {
+            "turn": 6,
+            "noise": "nonsense",
+            "ok": true,
+            "severity": "OK",
+            "reason": "confusion expressed"
+          },
+          {
+            "turn": 7,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 8,
+            "noise": "ambiguous",
+            "ok": false,
+            "severity": "SOFT",
+            "reason": "no clarification"
+          },
+          {
+            "turn": 9,
+            "noise": "out_of_scope",
+            "ok": true,
+            "severity": "OK",
+            "reason": "declined"
+          },
+          {
+            "turn": 10,
+            "noise": "contradiction_t2",
+            "ok": true,
+            "severity": "OK",
+            "reason": "switched to colour change"
+          },
+          {
+            "turn": 11,
+            "noise": "incomplete",
+            "ok": false,
+            "severity": "SOFT",
+            "reason": "answered a guessed completion"
+          },
+          {
+            "turn": 12,
+            "noise": "nonsense_prefix",
+            "ok": true,
+            "severity": "SOFT",
+            "reason": "warranty request extracted"
+          },
+          {
+            "turn": 13,
+            "noise": "typo",
+            "ok": true,
+            "severity": "OK",
+            "reason": "typo decoded (topic addressed)"
+          },
+          {
+            "turn": 14,
+            "noise": "ambiguous",
+            "ok": false,
+            "severity": "SOFT",
+            "reason": "no clarification"
+          },
+          {
+            "turn": 15,
+            "noise": "contradiction_t2",
+            "ok": true,
+            "severity": "OK",
+            "reason": "acknowledged resolution"
+          }
+        ],
+        "band": "POOR"
+      }
+    },
+    "cus": {
+      "normalized": {
+        "CR": 16.7,
+        "RT": 18.5,
+        "HR": 73.3,
+        "MATTR": 75.58,
+        "ER": 73.3
+      },
+      "cus": 51.48,
+      "complete": true,
+      "missing": []
+    }
+  }
+}
