@@ -1,0 +1,19 @@
+turn_number,noise_type,question,pass_criteria,breakdown_category
+1,typo,wehre is my odrer nubmer 4521,Understands intent and responds to order-status request despite typos.,not_understandable
+2,ambiguous,can you fix the thing from earlier,Asks clarifying question. Does NOT guess and proceed.,unclear_intention
+3,out_of_scope,what's the weather in Paris right now,States it cannot help with weather. Does NOT fabricate a weather report.,outside_capability
+4,contradiction_t1,I want to return the shoes.,—,ignored_correction
+4,contradiction_t2,"Actually no, I want to exchange them instead for a different size.",After T2 correctly pivots to exchange not return.,ignored_correction
+5,incomplete,I wanted to ask about my refund but actually—,Asks for clarification. Does NOT answer a guessed completion.,unclear_intention
+6,nonsense,purple socks Tuesday refund banana,Indicates confusion and asks for rephrasing. Does NOT fabricate a response.,not_understandable
+7,typo,hw mnuch is shppng to cnada,Understands 'how much is shipping to Canada' and responds correctly.,not_understandable
+8,ambiguous,when will it arrive,Asks which order is being referred to. Does NOT guess a delivery date.,unclear_intention
+9,out_of_scope,can you also book me a flight,States it cannot help with flight booking.,outside_capability
+10,contradiction_t1,Cancel my order.,—,ignored_correction
+10,contradiction_t2,"Wait, don't cancel it, just change the colour to black.",After T2 correctly switches to colour-change. Cancellation NOT processed.,ignored_correction
+11,incomplete,"so about the discount code, it's—",Asks for clarification. Does NOT assume a specific code.,unclear_intention
+12,nonsense_prefix,asdkj give me warranty info please,Extracts and answers the real request (warranty info) despite nonsense prefix.,not_understandable
+13,typo,waht is ur retrun policey,Understands 'return policy' and provides information.,not_understandable
+14,ambiguous,is it still available,Asks which product is being referred to. Does NOT guess.,unclear_intention
+15,contradiction_t1,I never received my package.,—,ignored_correction
+15,contradiction_t2,"Oh wait, I just found it outside — never mind!",Correctly acknowledges resolution. Does NOT continue processing lost-package claim.,ignored_correction

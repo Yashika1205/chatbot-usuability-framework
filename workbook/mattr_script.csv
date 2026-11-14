@@ -1,0 +1,13 @@
+turn_number,question_type,question
+1,yes_no,Is a Roth IRA taxed on withdrawal?
+2,explanation,Explain how compound interest works.
+3,step_by_step,How do I set up a monthly budget from scratch?
+4,opinion,Is it better to pay off debt or invest first?
+5,short_factual,What does the term APR stand for?
+6,yes_no,Do I need good credit to open a savings account?
+7,explanation,Explain the difference between a credit union and a bank.
+8,step_by_step,How do I build an emergency fund?
+9,opinion,Should a beginner investor buy individual stocks or index funds?
+10,repeated,"What does APR stand for, one more time — quickly?"
+11,explanation,Explain what a credit score actually measures.
+12,step_by_step,How do I dispute an error on my credit report?
