@@ -11,7 +11,7 @@
 
 ## What is this?
 
-This framework automatically evaluates chatbot usability across **5 objective dimensions** — without any human raters. It supports both **rule-based chatbots (Rasa)** and **LLM-backed chatbots (Ollama)**, and compares automated scores against a **human SUS study** (61 responses: 31 for Llama 3.1, 30 for Mistral; Rasa was not tested by humans). See [Results](#-results) and `human_study/`.
+This framework automatically evaluates chatbot usability across **5 objective dimensions** — without any human raters. It supports both **rule-based chatbots (Rasa)** and **LLM-backed chatbots (Ollama)**, and compares automated scores against a **human SUS study**. See [Results](#-results) and `human_study/`.
 
 ---
 
@@ -120,7 +120,7 @@ Input: Chatbot Endpoint (Rasa / Ollama)
          ▼
  ┌───────────────┐
  │  SUS Study    │  ← Human perception
- │ (Llama, Mistral)│
+ │               │
  └───────┬───────┘
          │
          ▼
@@ -273,8 +273,8 @@ Latest team run (26 Oct, 3 runs, mean) and the human SUS study:
 | Chatbot | CUS (automated, 0–100) | Mean SUS (human, 0–100) | SUS responses |
 |---|---|---|---|
 | Llama 3.1 8B | 59.64 | 71.0 | 31 |
-| Mistral 7B | 51.54 | 70.9 | 30 |
-| Rasa | about 24.5 (4 of 5 metrics; MATTR missing) | not tested by humans | n/a |
+| Mistral 7B   | 51.54 | 70.9 | 30 |
+| Rasa         | about 24.5 (4 of 5 metrics; MATTR missing) | not tested by humans | n/a |
 
 - Humans rated Llama and Mistral the same (Welch p = 0.98), both just above the common SUS benchmark of 68. The automated 8-point CUS gap is therefore **not confirmed** by testers.
 - With only two chatbots in the human study, a correlation between CUS and SUS cannot be computed. We report a rank comparison only.
